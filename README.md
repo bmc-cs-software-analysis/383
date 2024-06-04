@@ -1,7 +1,7 @@
-CS151
+CS383
 =============================
 
-Introduction to Computer Science - CS151 (Bryn Mawr College Fall 2023)
+ Software Analysis- CS383 (Bryn Mawr College Spring 2024)
 
 ### Running locally:
 Run `bundle exec jekyll serve`
