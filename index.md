@@ -1,5 +1,5 @@
 ---
-title: Data Structures - Bryn Mawr College
+title: Software Analysis - Bryn Mawr College
 layout: default
 img: <!-- turk-engraving-detail -->
 img_link: <!-- http://en.wikipedia.org/wiki/The_Turk -->
@@ -80,10 +80,10 @@ Course Readings
 : Some lectures will have accompanying optional reading related to the lecture's topic
 
 Grading
-* Homeworks: 35%
-* Labs: 5%
-* Midterms: 20%
-* Final: 35% 
+* Homeworks: 45%
+* Labs: 10%
+* Midterm: 20%
+* Final: 20% 
 * Participation: 5%
 
 
