@@ -8,12 +8,7 @@ active_tab: main_page
 ---
 
 
-This course is an introduction to the fundamental data structures of computer science: linked lists,
-stacks, queues, trees (BSTs, heaps, AVLs and other self-balancing BSTs), hash tables,
-sets (Union-Find), graphs and their accompanying algorithms. Principles of algorithmic
-analysis and object reasoning and design will be introduced using mathematical techniques
-for the notions of both complexity and correctness. More practical issues, such as memory
-management, searching, sorting and hashing, will also be covered.
+This course offers an introduction to the theoretical foundations of software analysis and its applications in software engineering and security. Effective program analysis is essential for ensuring the reliability, security, and performance of software systems. Students will explore a range of methods for analyzing program behavior including testing, static analysis, and formal methods. The course emphasizes both theoretical knowledge and practical experience through implementation of analysis tools and engaging with current state-of-the-art techniques.
 
 <!-- Display an alert about upcoming homework assignments -->
 {% capture now %}{{'now' | date: '%s'}}{% endcapture %}
@@ -47,19 +42,23 @@ Check out the [excellent final projects](http://crowdsourcing-class.org/final-pr
 
 
 Course number
-: CMSC B151 
+: CMSC B383 
 
 Instructor
 : [Elizabeth Dinella](https://www.seas.upenn.edu/~edinella/)
 
+<!--
 Teaching Assistants
 : [Course Staff](staff.html) 
+-->
 
 Website 
-: [https://bmc-cs-151.github.io/](https://bmc-cs-151.github.io/)
+: [https://bmc-cs-383.github.io/](https://bmc-cs-383.github.io/)
 
+<!-- 
 Code Samples From Lecture
 : [Github](https://github.com/BMC-CS-151/class-examples-s24)
+-->
 
 Discussion Forum
 : [Piazza](https://piazza.com/class/lr8bl2y6e4f5ql/)
@@ -69,14 +68,12 @@ Time and place
 : Lab M: 2:40-4:00pm, Location: Park 231
 
 Prerequisites
-: One of the following courses is required with a grade of 2.0 or better (or permission of
-the instructor):
-1. CS B110
-2. CS B113
-3. CS H105
+: The following courses are required with a grade of 2.0 or better (or permission of the instructor):
+1. CS B223 (or H equivalent??)
+2. CS B340 (or H equivalent??)
+3. CS B151
 
 Course Readings
-: Each lecture has an accompanying chapter/section of the [textbook](https://www.wiley.com/en-us/Data+Structures+and+Algorithms+in+Java%2C+6th+Edition-p-9781118771334). We will be using the 6th edition of Data Structures and Algorithms by Goodrich, Tamassia and Goldwasser as the required text. 
 : Some lectures will have accompanying optional reading related to the lecture's topic
 
 Grading
@@ -87,9 +84,9 @@ Grading
 * Participation: 5%
 
 
-Late day policy
+<!--Late day policy
 : As a general rule, no late homework will be accepted.
 <br>
-See the <a href="{{ site.url }}{{ site.baseurl }}/policies.html">Policies</a> for more details.
+See the <a href="{{ site.url }}{{ site.baseurl }}/policies.html">Policies</a> for more details.-->
 
 <!--#### Acknowledgments-->
