@@ -9,16 +9,17 @@
       readings:
         -
           title: "Undecidability of Program Properties"
-      #assignments: 
-       #- 
-       #   title: "Lab00 - Command Line, Unix, Vim"
-       #   url: "labs/Lab00.html"
+      assignments: 
+       - 
+          title: "Lab00 - Ad-hoc Testing"
+          url: "labs/Lab00.html"
+          deadline: "2024-01-28"
        # - 
        #   title: "Lab01 -  Exceptions & I/O"
        #   url: "labs/Lab01.html"
     - 
       date: 2024-01-24
-      title: Lecture 2 <br> Program Representations <br> Program Reduction
+      title: Lecture 2 <br> Program Representations <br> Program Transformation
       #slides: "slides/lecture02.pdf"
       recording: ~
       readings:
@@ -29,12 +30,12 @@
       date: 2024-01-28
       assignments: 
         -
-          title: "HW00 - Program Representations and Reduction"
+          title: "HW00 - Java Byte Code"
           url: "hws/HW00.html"
           deadline: "2024-02-01"
     - 
       date: 2024-01-29
-      title: Lecture 3 <br> Specifications I
+      title: Lecture 3 <br> Unit Testing <br> Coverage 
       #slides: "slides/lecture03.pdf"
       recording: ~
       readings:
@@ -46,7 +47,7 @@
       #  url: "labs/Lab02.html"
     - 
       date: 2024-01-31
-      title: Lecture 4 <br> Specifications II
+      title: Lecture 4 <br> Unit Testing <br> Test Oracles <br> Mutation Testing
       readings:
         -
           title: "Chapter 3"
@@ -57,7 +58,12 @@
       date: 2024-02-04
       assignments: 
         -
-          title: "HW01 - Specifications"
+          title: "Lab01 - Coverage"
+          #url: "hws/HW01.html"
+          deadline: "2024-02-08"
+
+        -
+          title: "HW01 - Mutation Testing"
           url: "hws/HW01.html"
           deadline: "2024-02-08"
 
@@ -229,7 +235,7 @@
       date: 2024-03-24
       assignments:
           - 
-            title: "HW06 - Heaps"
+            title: "HW06 - Symbolic Execution"
             deadline: 2024-04-04
             url: "hws/HW06.html"
 
@@ -264,7 +270,7 @@
       recording: ~
     - 
       date: 2024-04-03
-      title: Lecture 19 <br> Program Synthesis 
+      title: Lecture 19 <br> Constraint Based Analysis <br> Datalog 
       #slides: "slides/lecture20.pdf"
       readings:
         -
@@ -276,11 +282,11 @@
       assignments: 
         -
           deadline: 2024-04-21
-          title: "HW07 - ????"
+          title: "HW07 - Static Analysis"
           url: "hws/HW07.html"
     - 
       date: 2024-04-08
-      title: Lecture 20 <br> Program Repair
+      title: Lecture 20 <br> Program Synthesis
       #slides: "slides/lecture20.pdf"
       recording: ~
       readings:
@@ -292,7 +298,7 @@
             url: "labs/Lab09.html"
     - 
       date: 2024-04-10
-      title: Lecture 21 <br> ????? 
+      title: Lecture 21 <br> Program Repair 
       #slides: "slides/lecture21.pdf"
       recording: ~
       readings:
@@ -324,7 +330,7 @@
       date: 2024-04-21
       assignments:
         -
-          title: "HW08 - AVL Trees"
+          title: "HW08 - Project"
           deadline: 2024-05-09
           url: "hws/HW08.html"
     - 
