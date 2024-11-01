@@ -2,7 +2,7 @@
   lectures: 
     - 
       date: 2024-01-22
-      title: Lecture 1 <br> Intro to Software Analysis <br> Program Representations  
+      title: Lecture 1 <br> Intro to Software Analysis 
       #slides:  "slides/lecture01.pdf"
       recording: ~
           #code: "https://github.com/BMC-CS-151/class-examples-f23/tree/main/week1/"
@@ -19,7 +19,7 @@
        #   url: "labs/Lab01.html"
     - 
       date: 2024-01-24
-      title: Lecture 2 <br> Program Representations <br> Program Transformation
+      title: Lecture 2 <br> Program Representations and Transformations
       #slides: "slides/lecture02.pdf"
       recording: ~
       readings:
@@ -28,26 +28,28 @@
 
     -
       date: 2024-01-28
-      assignments: 
-        -
-          title: "HW00 - Java Byte Code"
-          url: "hws/HW00.html"
-          deadline: "2024-02-01"
+      #assignments: 
+      #  -
+      #    title: "HW00 - Java Byte Code"
+      #    url: "hws/HW00.html"
+      #    deadline: "2024-02-01"
     - 
       date: 2024-01-29
-      title: Lecture 3 <br> Unit Testing <br> Coverage 
+      title: Lecture 3 <br> Program Representations and Transformations II
+
       #slides: "slides/lecture03.pdf"
       recording: ~
-      readings:
-        -
-          title: "Chapter 2.5"
-      #assignments: 
-      #- 
-      #title: "Lab02 -  Inheritance, ExpandableArray"
-      #  url: "labs/Lab02.html"
+      #readings:
+      #  -
+      #  title: "Chapter 2.5"
+      assignments: 
+       - 
+        title: "Lab01 -  Coverage"
+        url: "elizabethdinella.github.io/blog-posts/coverage/"
+        deadline: "2024-02-08"
     - 
       date: 2024-01-31
-      title: Lecture 4 <br> Unit Testing <br> Test Oracles <br> Mutation Testing
+      title: Lecture 4 <br> Unit Testing <br> Coverage 
       readings:
         -
           title: "Chapter 3"
@@ -57,19 +59,19 @@
     -
       date: 2024-02-04
       assignments: 
-        -
-          title: "Lab01 - Coverage"
-          #url: "hws/HW01.html"
-          deadline: "2024-02-08"
+        #-
+        #    title: "Lab01 - Coverage"
+        #  #url: "hws/HW01.html"
+        #  deadline: "2024-02-08"
 
         -
-          title: "HW01 - Mutation Testing"
+          title: "HW01 - Program Transformations"
           url: "hws/HW01.html"
           deadline: "2024-02-08"
 
     - 
       date: 2024-02-05
-      title: Lecture 5 <br> Specifications III
+      title: Lecture 5 <br> Unit Testing <br> Test Oracles <br> Mutation Testing
       readings:
         -
           title: "Chapter 3"
@@ -82,7 +84,7 @@
         
     - 
       date: 2024-02-07
-      title: Lecture 6 <br> Testing I
+      title: Lecture 6 <br> Specifications I
       #slides: "slides/lecture06.pdf"
       recording: ~
       readings:
@@ -120,7 +122,7 @@
       assignments: 
         -
           deadline: 2024-02-22
-          title: "HW03 -  ????"
+          title: "HW03 -  Specifications"
           url: "hws/HW03.html"
 
     -

@@ -57,7 +57,7 @@ In this lab, you will:
 1. Review JUnit and how to use it effectively.
 2. Consider what makes a good test suite and how to strengthen it. 
 
-In this course we will explore various techniques for chekcing software correctness. As we saw in class, each method comes with its own tradeoffs, balancing cost, and the level of confidence they provide.
+In this course we will explore various techniques for checking software correctness. As we saw in class, each method comes with its own tradeoffs, balancing cost, and the level of confidence they provide.
 
 In today's lab we will focus on one of the simplest and most flexible methods: ad-hoc testing. 
 
@@ -67,7 +67,7 @@ Ad-hoc testing is an informal testing approach where testers explore the applica
 
 JUnit is a unit testing framework for Java, designed to facilitate the creation and execution of tests for individual "units" of code, typically methods. JUnit provides libraries for writing tests and assertions and a framework for executing those tests and confirming their results.
 
-Download the junit and hamcrest jars:
+Download the JUnit and Hamcrest jars:
 
 ### Setup Instructions
 
@@ -78,7 +78,7 @@ To get started, download the following jar files:
 2. hamcrest-core-1.13.jar: 
 `wget https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar`
 
-To run junit, first compile the test file, then run your suite using the following two commands:
+To run JUnit, first compile the test file, then run your suite using the following two commands:
 
 ```bash
 javac -cp .:junit-4.13.2.jar  TestFile.java
@@ -132,19 +132,19 @@ As you proceed, reflect again on our question: What makes a good test suite?
 How does this section differ from the previous one regarding testing? Does implementing the code alongside writing the tests change your perspective on how you approach testing?
 
 ### Signing out
-Submit both of your test suites and `ParseDate` implementation to gradescope along with a document of your current thoughts. For this lab, there are no wrong answers! Just give your intuition. Next week, we will learn about established test quality metrics.
+Submit both of your test suites and `ParseDate` implementation to Gradescope along with a document reflecting your current thoughts on "What Makes a Good Test Suite". For this lab, there are no definitive right or wrong responses. Next week, we will learn about established test quality metrics. In this assignment, share your insights and observations.
 
 1. Test Suite Quality: 
-a. What qualities make a good test suite? 
-b. How could you potentially automatically measure these qualities? Would it be possible?
-c. If you were to change your test suite to be as poor as possible on these metrics, how would it get worse?
-d. How did you know when to stop testing? 
+a. What qualities contribute to an effective test suite? 
+b. How might you automatically measure these qualities? Is it feasible?
+c. If you aimed to make your test suite as ineffective as possible, what changes would you make?
+d. How did you determine when you had tested sufficiently?
 
 2. Writing Test Suites: 
-a. What was the most difficult part of writing your test suite? 
-b. Was it easier to write tests for the code you are familar with and wrote yourself?
-c. For Part 2, did you write tests first or the implentation? How was your experience? How would things have changed if you did it the other way around?
-d. How did I derive assertions? Was it different for each part? How did you understand what the expected value should be?
+a. What was the most challenging aspect of creating your test suite? 
+b. Did you find it easier to write tests for code that you had authored?
+c. In Part 2, did you write your tests before or after the implementation? How did that choice affect your experience? How might things have changed if you had approached it differently?
+d. How did you derive assertions? Was the process different for each part? How did you ascertain what the expected values should be?
 
-3. AI Written tests: For this section ask ChatGPT (or your favorite AI assistant) to write tests for both source files. 
-a. Include a few sentences on the quality of these tests. Do they compile? What makes them good / bad? What properties do they satisfy or vioalte? Include examples.
+3. AI Written tests: For this section use ChatGPT (or your favorite AI assistant) to generate tests for both source files. 
+a. Write a few sentences assessing the quality of these AI-generated tests. Do they compile? What are their strengths and weaknesses? What properties do they satisfy or violate? Include specific examples where relevant.
