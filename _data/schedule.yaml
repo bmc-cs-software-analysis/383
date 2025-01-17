@@ -77,7 +77,7 @@
         
     - 
       date: 2025-02-12
-      title: Lecture 6 <br> Specifications I
+      title: Lecture 7 <br> Specifications II
       #slides: "slides/lecture06.pdf"
       recording: ~
       #readings:
@@ -88,7 +88,7 @@
           url: "hws/HW02.html"
     -
       date: 2025-02-17
-      title: Lecture 7 <br> Testing - An Overview <br> Defects4j
+      title: Lecture 8 <br> Testing - An Overview <br> Defects4j
       #slides: "slides/lecture07.pdf"
       readings:
       assignments: 
@@ -99,7 +99,7 @@
           title: "Project 1 - Bug Case Study"
     - 
       date: 2025-02-19
-      title: Lecture 8 <br> SBST <br> Genetic Algorithms 
+      title: Lecture 9 <br> SBST <br> Genetic Algorithms 
       #slides: "slides/lecture08.pdf"
       readings:
         #-
@@ -113,7 +113,7 @@
 
     -
       date: 2025-02-24
-      title: Lecture 9 <br> SBST <br> EvoSuite
+      title: Lecture 10 <br> SBST <br> EvoSuite
       #slides: "slides/lecture09.pdf"
       #readings:
       #  -
@@ -125,7 +125,7 @@
           #url: "labs/Lab05.html"
     -
       date: 2025-02-26
-      title: Lecture 10 <br> SBST <br> EvoSuite
+      title: Lecture 11 <br> SBST <br> EvoSuite
       #slides: "slides/lecture10.pdf"
       #readings:
       #  -
@@ -133,7 +133,7 @@
       #recording: ~
     - 
       date: 2025-03-03
-      title: Lecture 11 <br> SBST <br> Randoop
+      title: Lecture 12 <br> SBST <br> Randoop
       #slides: "slides/lecture11.pdf"
       #readings:
       #  -
@@ -153,7 +153,7 @@
           #_url: "labs/Lab00.html"
     - 
       date: 2025-03-05
-      title: Lecture 12 <br> SBST <br> AFL
+      title: Lecture 13 <br> SBST <br> AFL
       #readings:
       #  -
       #    title: "Chapter 8"
