@@ -176,6 +176,8 @@
       assignments: 
         -
             title: "No Lab"
+        -
+            title: "Project II"
 
       #readings:
       #    - 
@@ -240,7 +242,7 @@
       #    title: "Chapter 12 - Sorting & Selection"
       assignments: 
         -
-            title: "Lab 9 - Static Analysis"
+            title: "Lab 9 - Project Check in"
             #url: "labs/Lab09.html"
     - 
       date: 2025-04-09
@@ -262,7 +264,7 @@
       #    title: "Chapter 11.2 - 11.6"
       assignments: 
         -
-          title: "Lab10 - Project Check in"
+          title: "Lab10 - Static Analysis"
           #url: "labs/Lab10.html"
     - 
       date: 2025-04-16
