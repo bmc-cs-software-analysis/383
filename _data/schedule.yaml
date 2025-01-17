@@ -18,8 +18,8 @@
       #slides: "slides/lecture02.pdf"
       recording: ~
       readings:
-        -
-          title: "Simplifying and Isolating Failure-Inducing Input - Andreas Zeller"
+      #  -
+      #    title: "Simplifying and Isolating Failure-Inducing Input - Andreas Zeller"
       assignments: 
        - 
           title: "Lab 1 - Ad-hoc Testing"
