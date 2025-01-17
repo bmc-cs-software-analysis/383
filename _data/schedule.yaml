@@ -9,30 +9,22 @@
       readings:
         -
           title: "Undecidability of Program Properties"
-      assignments: 
-       - 
-          title: "Lab00 - Ad-hoc Testing"
-          url: "labs/Lab00.html"
-          deadline: "2025-01-28"
        # - 
        #   title: "Lab01 -  Exceptions & I/O"
        #   url: "labs/Lab01.html"
     - 
-      date: 2025-01-24
+      date: 2025-01-27
       title: Lecture 2 <br> Program Representations and Transformations
       #slides: "slides/lecture02.pdf"
       recording: ~
       readings:
         -
           title: "Simplifying and Isolating Failure-Inducing Input - Andreas Zeller"
-
-    -
-      date: 2025-01-28
-      #assignments: 
-      #  -
-      #    title: "HW00 - Java Byte Code"
-      #    url: "hws/HW00.html"
-      #    deadline: "2025-02-01"
+      assignments: 
+       - 
+          title: "Lab00 - Ad-hoc Testing"
+          url: "labs/Lab00.html"
+          deadline: "2025-01-28"
     - 
       date: 2025-01-29
       title: Lecture 3 <br> Program Representations and Transformations II
@@ -42,22 +34,22 @@
       #readings:
       #  -
       #  title: "Chapter 2.5"
-      assignments: 
-       - 
-        title: "Lab01 -  Coverage"
-        url: "elizabethdinella.github.io/blog-posts/coverage/"
-        deadline: "2025-02-08"
     - 
-      date: 2025-01-31
+      date: 2025-02-03
       title: Lecture 4 <br> Unit Testing <br> Coverage 
       readings:
         -
           title: "Chapter 3"
       #slides: "slides/lecture04.pdf"
       recording: ~
-
+      assignments: 
+       - 
+        title: "Lab01 -  Coverage"
+        url: "elizabethdinella.github.io/blog-posts/coverage/"
+        deadline: "2025-02-08"
     -
-      date: 2025-02-04
+      date: 2025-02-05
+      title: Lecture 5 <br> Unit Testing <br> Test Oracles <br> Mutation Testing
       assignments: 
         #-
         #    title: "Lab01 - Coverage"
@@ -70,8 +62,8 @@
           deadline: "2025-02-08"
 
     - 
-      date: 2025-02-05
-      title: Lecture 5 <br> Unit Testing <br> Test Oracles <br> Mutation Testing
+      date: 2025-02-10
+      title: Lecture 6 <br> Specifications I
       #readings:
       #  -
       #    title: "Chapter 3"
@@ -83,7 +75,7 @@
           #url: "labs/Lab03.html"
         
     - 
-      date: 2025-02-07
+      date: 2025-02-12
       title: Lecture 6 <br> Specifications I
       #slides: "slides/lecture06.pdf"
       recording: ~
