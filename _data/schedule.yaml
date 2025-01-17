@@ -25,7 +25,7 @@
        - 
           title: "Lab 1 - Ad-hoc Testing"
           url: "labs/Lab01.html"
-          deadline: "2025-01-28"
+          deadline: "2025-02-02"
     - 
       date: 2025-01-29
       title: Lecture 3 <br> Program Representations and Transformations II
@@ -46,7 +46,7 @@
       assignments: 
        - 
         title: "Lab 2 -  Coverage"
-        url: "elizabethdinella.github.io/blog-posts/coverage/"
+        url: "https://elizabethdinella.github.io/blog-posts/coverage/"
         deadline: "2025-02-08"
     -
       date: 2025-02-05
