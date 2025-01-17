@@ -87,20 +87,20 @@
           url: "hws/HW02.html"
     -
       date: 2025-02-17
-      title: Lecture 7 <br> Testing II
+      title: Lecture 7 <br> Testing - An Overview <br> Defects4j
       #slides: "slides/lecture07.pdf"
       readings:
       assignments: 
         - 
-          title: "Lab04"
+          title: "Lab04 - Defects4j"
           #url: "labs/Lab04.html"
     - 
       date: 2025-02-19
-      title: Lecture 8 <br> Testing III
+      title: Lecture 8 <br> SBST <br> Genetic Algorithms 
       #slides: "slides/lecture08.pdf"
       readings:
-        -
-          title: "Chapter 6.2-6.3"
+        #-
+        #    title: "Chapter 6.2-6.3"
       recording: ~
       assignments: 
         -
@@ -110,7 +110,7 @@
 
     -
       date: 2025-02-24
-      title: Lecture 9 <br> SAT and SMT 
+      title: Lecture 9 <br> SBST <br> EvoSuite
       #slides: "slides/lecture09.pdf"
       #readings:
       #  -
@@ -122,7 +122,7 @@
           #url: "labs/Lab05.html"
     -
       date: 2025-02-26
-      title: Lecture 10 <br> Formal Verification I
+      title: Lecture 10 <br> SBST <br> EvoSuite
       #slides: "slides/lecture10.pdf"
       #readings:
       #  -
@@ -130,7 +130,7 @@
       #recording: ~
     - 
       date: 2025-03-03
-      title: Lecture 11 <br> Formal Verification II
+      title: Lecture 11 <br> SBST <br> Randoop
       #slides: "slides/lecture11.pdf"
       #readings:
       #  -
@@ -150,7 +150,7 @@
           #_url: "labs/Lab00.html"
     - 
       date: 2025-03-05
-      title: Lecture 12 <br> Symbolic Execution I 
+      title: Lecture 12 <br> SBST <br> AFL
       #readings:
       #  -
       #    title: "Chapter 8"
@@ -168,7 +168,7 @@
   lectures:
     - 
       date: 2025-03-17
-      title: Lecture 14 <br> Type Systems
+      title: Lecture 14 <br> SAT and SMT 
       #slides: "slides/lecture14.pdf"
       recording: ~
       assignments: 
@@ -180,7 +180,7 @@
       #      title: "Chapter 9 - Priority Queues"
     - 
       date: 2025-03-19
-      title: Lecture 15 <br> Static Analysis I 
+      title: Lecture 15 <br> Formal Verification I
       #slides: "slides/lecture15.pdf"
       recording: ~
       #assignments: 
@@ -190,7 +190,7 @@
 
     - 
       date: 2025-03-24
-      title: Lecture 16 <br> Static Analysis II
+      title: Lecture 16 <br> Formal Verification II 
       #slides: "slides/lecture16.pdf"
       recording: ~
       readings: ~
@@ -200,13 +200,13 @@
       #    url: "labs/Lab08.html"
     - 
       date: 2025-03-26
-      title: Lecture 17 <br> Static Analysis III
+      title: Lecture 17 <br> Symbolic Execution I 
           #slides: "slides/lecture18.pdf"
       recording: ~
       readings: ~
     - 
       date: 2025-03-31
-      title: Lecture 18 <br> Constraint Based Analysis <br> CodeQL
+      title: Lecture 18 <br> Symbolic Execution II
       #slides: "slides/lecture18.pdf"
       assignments: 
         - 
@@ -219,7 +219,7 @@
       recording: ~
     - 
       date: 2025-04-02
-      title: Lecture 19 <br> Constraint Based Analysis <br> Datalog 
+      title: Lecture 19 <br> Type Systems
       #slides: "slides/lecture20.pdf"
       #readings:
       #  -
@@ -228,7 +228,7 @@
       recording: ~
     - 
       date: 2025-04-07
-      title: Lecture 20 <br> Program Synthesis
+      title: Lecture 20 <br> Static Analysis I
       #slides: "slides/lecture20.pdf"
       #recording: ~
       #readings:
@@ -240,7 +240,7 @@
             #url: "labs/Lab09.html"
     - 
       date: 2025-04-09
-      title: Lecture 21 <br> Program Repair 
+      title: Lecture 21 <br> Static Analysis II 
       #slides: "slides/lecture21.pdf"
       #recording: ~
       #readings:
