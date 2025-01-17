@@ -45,7 +45,7 @@ Course number
 : CMSC B383 
 
 Instructor
-: [Elizabeth Dinella](https://www.seas.upenn.edu/~edinella/)
+: [Elizabeth Dinella](https://www.elizabethdinella.github.io)
 
 <!--
 Teaching Assistants
@@ -53,7 +53,7 @@ Teaching Assistants
 -->
 
 Website 
-: [https://bmc-cs-383.github.io/](https://bmc-cs-383.github.io/)
+: [https://bmc-cs-software-analysis.github.io/383](https://bmc-cs-software-analysis.github.io/383)
 
 <!-- 
 Code Samples From Lecture
@@ -61,26 +61,20 @@ Code Samples From Lecture
 -->
 
 Discussion Forum
-: [Piazza](https://piazza.com/class/lr8bl2y6e4f5ql/)
+: [Piazza](https://piazza.com/class/m61bd6hr6hw7h/)
 
 Time and place
-: Spring 2024, MW 1-2:30pm, Location: Park 245
-: Lab M: 2:40-4:00pm, Location: Park 231
-
-Prerequisites
-: The following courses are required with a grade of 2.0 or better (or permission of the instructor):
-1. CS B223 (or H equivalent??)
-2. CS B340 (or H equivalent??)
-3. CS B151
+: Spring 2025, MW 10:10-11:30pm, Location: Park 337
+: Lab M: 2:40-4:00pm, Location: Park 230
 
 Course Readings
-: Some lectures will have accompanying optional reading related to the lecture's topic
+: Some lectures will have accompanying readings related to the lecture's topic
 
 Grading
-* Homeworks: 45%
-* Labs: 10%
-* Midterm: 20%
-* Final: 20% 
+* Homeworks: 20%
+* Labs: 25%
+* Project I : 20%
+* Project II: 30% 
 * Participation: 5%
 
 
