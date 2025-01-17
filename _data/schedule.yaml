@@ -35,6 +35,11 @@
       #readings:
       #  -
       #  title: "Chapter 2.5"
+      assignments:
+        -
+          title: "HW01 - Program Transformations"
+          url: "hws/HW01.html"
+          deadline: "2025-02-12"
     - 
       date: 2025-02-03
       title: Lecture 4 <br> Unit Testing <br> Coverage 
@@ -51,16 +56,13 @@
     -
       date: 2025-02-05
       title: Lecture 5 <br> Unit Testing <br> Test Oracles <br> Mutation Testing
-      assignments: 
+      #assignments: 
         #-
         #    title: "Lab01 - Coverage"
         #  #url: "hws/HW01.html"
         #  deadline: "2025-02-08"
 
-        -
-          title: "HW01 - Program Transformations"
-          url: "hws/HW01.html"
-          deadline: "2025-02-08"
+        
 
     - 
       date: 2025-02-10
