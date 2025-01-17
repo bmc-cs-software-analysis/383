@@ -45,7 +45,7 @@ Course number
 : CMSC B383 
 
 Instructor
-: [Elizabeth Dinella](https://www.elizabethdinella.github.io)
+: [Elizabeth Dinella](https://elizabethdinella.github.io)
 
 <!--
 Teaching Assistants
@@ -66,6 +66,7 @@ Discussion Forum
 Time and place
 : Spring 2025, MW 10:10-11:30pm, Location: Park 337
 : Lab M: 2:40-4:00pm, Location: Park 230
+
 
 Course Readings
 : Some lectures will have accompanying readings related to the lecture's topic
