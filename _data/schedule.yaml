@@ -94,6 +94,8 @@
         - 
           title: "Lab04 - Defects4j"
           #url: "labs/Lab04.html"
+        -
+          title: "Project 1 - Bug Case Study"
     - 
       date: 2025-02-19
       title: Lecture 8 <br> SBST <br> Genetic Algorithms 
@@ -118,7 +120,7 @@
       #recording: ~
       assignments: 
         - 
-          title: "Lab05"
+          title: "Lab05 - Project Check in"
           #url: "labs/Lab05.html"
     -
       date: 2025-02-26
@@ -137,7 +139,7 @@
       #    title: "Chapter 8"
       assignments: 
         - 
-          title: "Lab06"
+          title: "Lab06 - Project Presentations"
         -
            title: "HW05 - Verification"
            deadline: 2025-03-17
