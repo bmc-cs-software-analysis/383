@@ -1,7 +1,7 @@
 - 
   lectures: 
     - 
-      date: 2024-01-22
+      date: 2025-01-22
       title: Lecture 1 <br> Intro to Software Analysis 
       #slides:  "slides/lecture01.pdf"
       recording: ~
@@ -13,12 +13,12 @@
        - 
           title: "Lab00 - Ad-hoc Testing"
           url: "labs/Lab00.html"
-          deadline: "2024-01-28"
+          deadline: "2025-01-28"
        # - 
        #   title: "Lab01 -  Exceptions & I/O"
        #   url: "labs/Lab01.html"
     - 
-      date: 2024-01-24
+      date: 2025-01-24
       title: Lecture 2 <br> Program Representations and Transformations
       #slides: "slides/lecture02.pdf"
       recording: ~
@@ -27,14 +27,14 @@
           title: "Simplifying and Isolating Failure-Inducing Input - Andreas Zeller"
 
     -
-      date: 2024-01-28
+      date: 2025-01-28
       #assignments: 
       #  -
       #    title: "HW00 - Java Byte Code"
       #    url: "hws/HW00.html"
-      #    deadline: "2024-02-01"
+      #    deadline: "2025-02-01"
     - 
-      date: 2024-01-29
+      date: 2025-01-29
       title: Lecture 3 <br> Program Representations and Transformations II
 
       #slides: "slides/lecture03.pdf"
@@ -46,9 +46,9 @@
        - 
         title: "Lab01 -  Coverage"
         url: "elizabethdinella.github.io/blog-posts/coverage/"
-        deadline: "2024-02-08"
+        deadline: "2025-02-08"
     - 
-      date: 2024-01-31
+      date: 2025-01-31
       title: Lecture 4 <br> Unit Testing <br> Coverage 
       readings:
         -
@@ -57,33 +57,33 @@
       recording: ~
 
     -
-      date: 2024-02-04
+      date: 2025-02-04
       assignments: 
         #-
         #    title: "Lab01 - Coverage"
         #  #url: "hws/HW01.html"
-        #  deadline: "2024-02-08"
+        #  deadline: "2025-02-08"
 
         -
           title: "HW01 - Program Transformations"
           url: "hws/HW01.html"
-          deadline: "2024-02-08"
+          deadline: "2025-02-08"
 
     - 
-      date: 2024-02-05
+      date: 2025-02-05
       title: Lecture 5 <br> Unit Testing <br> Test Oracles <br> Mutation Testing
-      readings:
-        -
-          title: "Chapter 3"
+      #readings:
+      #  -
+      #    title: "Chapter 3"
       #slides: "slides/lecture05.pdf"
       #recording: ~
-      #assignments: 
-      #  - 
-      #    title: "Lab03 -  LinkedLists"
-      #    url: "labs/Lab03.html"
+      assignments: 
+        - 
+          title: "Lab02 -  Oracles"
+          #url: "labs/Lab03.html"
         
     - 
-      date: 2024-02-07
+      date: 2025-02-07
       title: Lecture 6 <br> Specifications I
       #slides: "slides/lecture06.pdf"
       recording: ~
@@ -91,14 +91,14 @@
           -
             title: "Chapter 4"
     - 
-      date: 2024-02-11
+      date: 2025-02-11
       assignments:
        - 
-          deadline: 2024-02-18
+          deadline: 2025-02-18
           title: "HW02 -  Fuzzing"
           url: "hws/HW02.html"
     -
-      date: 2024-02-12
+      date: 2025-02-12
       title: Lecture 7 <br> Testing II
       #slides: "slides/lecture07.pdf"
       readings:
@@ -110,7 +110,7 @@
       #    url: "labs/Lab04.html"
       recording: ~
     - 
-      date: 2024-02-14
+      date: 2025-02-14
       title: Lecture 8 <br> Testing III
       slides: "slides/lecture08.pdf"
       readings:
@@ -118,15 +118,15 @@
           title: "Chapter 6.2-6.3"
       recording: ~
     - 
-      date: 2024-02-18
+      date: 2025-02-18
       assignments: 
         -
-          deadline: 2024-02-22
+          deadline: 2025-02-22
           title: "HW03 -  Specifications"
           url: "hws/HW03.html"
 
     -
-      date: 2024-02-19
+      date: 2025-02-19
       title: Lecture 9 <br> SAT and SMT 
       slides: "slides/lecture09.pdf"
       readings:
@@ -138,7 +138,7 @@
       #    title: "Lab05 - Stacks"
       #    url: "labs/Lab05.html"
     -
-      date: 2024-02-21
+      date: 2025-02-21
       title: Lecture 10 <br> Formal Verification I
       slides: "slides/lecture10.pdf"
       readings:
@@ -146,14 +146,14 @@
           title: "Chapter 5"
       recording: ~
     -
-      date: 2024-02-25
+      date: 2025-02-25
       assignments:
           - 
             title: "HW04 - ????"
-            deadline: 2024-02-29
+            deadline: 2025-02-29
             url: "hws/HW04.html"
     - 
-      date: 2024-02-26
+      date: 2025-02-26
       title: Lecture 11 <br> Formal Verification II
       #slides: "slides/lecture11.pdf"
       readings:
@@ -163,13 +163,13 @@
       #  - 
       #    title: "Lab06 - Iterators & ArrayList"
       #    url: "labs/Lab06.html"
-      #    deadline: 2024-02-29
+      #    deadline: 2025-02-29
       #  - 
           #deadline: 2023-10-27
           #title: "<s>HW03 -  Stacks & Queues</s>"
           #_url: "labs/Lab00.html"
     - 
-      date: 2024-02-28
+      date: 2025-02-28
       title: Lecture 12 <br> Symbolic Execution I 
       readings:
         -
@@ -177,17 +177,17 @@
       #slides: "slides/lecture12.pdf"
       recording: ~
     -
-      date: 2024-03-03
+      date: 2025-03-03
       assignments:
           -
            title: "HW05 - Verification"
-           deadline: 2024-03-17
+           deadline: 2025-03-17
            url: hws/HW05.html
       slides: ~
       recording: ~
 
     - 
-      date: 2024-03-04
+      date: 2025-03-04
       title: Lecture 13 <br> Symbolic Execution II
       slides: "slides/lecture13.pdf"
       recording: ~
@@ -196,23 +196,23 @@
       #      title: "Lab07 - Binary Trees"
       #      url: "labs/Lab07.html"
     - 
-      date: 2024-03-06
+      date: 2025-03-06
       title: Review
       #slides: "slides/lecture12.pdf"
       recording: ~
       assignments: ~
     - 
-      date: 2024-03-11
+      date: 2025-03-11
       title: Spring Break
     - 
-      date: 2024-03-13
+      date: 2025-03-13
       title: Spring Break 
 
   name: "Part I"
 -
   lectures:
     - 
-      date: 2024-03-18
+      date: 2025-03-18
       title: Lecture 14 <br> Type Systems
       #slides: "slides/lecture14.pdf"
       recording: ~
@@ -224,7 +224,7 @@
           - 
             title: "Chapter 9 - Priority Queues"
     - 
-      date: 2024-03-20
+      date: 2025-03-20
       title: Lecture 15 <br> Static Analysis I 
       #slides: "slides/lecture15.pdf"
       recording: ~
@@ -234,15 +234,15 @@
       #    title: "Chapter 9 - Priority Queues"
 
     -
-      date: 2024-03-24
+      date: 2025-03-24
       assignments:
           - 
             title: "HW06 - Symbolic Execution"
-            deadline: 2024-04-04
+            deadline: 2025-04-04
             url: "hws/HW06.html"
 
     - 
-      date: 2024-03-25
+      date: 2025-03-25
       title: Lecture 16 <br> Static Analysis II
       #slides: "slides/lecture16.pdf"
       recording: ~
@@ -252,13 +252,13 @@
       #    title: "Lab08 - Array based Binary Trees & Heaps"
       #    url: "labs/Lab08.html"
     - 
-      date: 2024-03-27
+      date: 2025-03-27
       title: Lecture 17 <br> Static Analysis III
           #slides: "slides/lecture18.pdf"
       recording: ~
       readings: ~
     - 
-      date: 2024-04-01
+      date: 2025-04-01
       title: Lecture 18 <br> Constraint Based Analysis <br> CodeQL
       #slides: "slides/lecture18.pdf"
       assignments: 
@@ -271,7 +271,7 @@
       #    title: "Chapter 10 - Maps, Hash Tables, and Skip Lists"
       recording: ~
     - 
-      date: 2024-04-03
+      date: 2025-04-03
       title: Lecture 19 <br> Constraint Based Analysis <br> Datalog 
       #slides: "slides/lecture20.pdf"
       readings:
@@ -280,14 +280,14 @@
             #title: "Chapter 12 - Sorting & Selection"
       recording: ~
     - 
-      date: 2024-04-07
+      date: 2025-04-07
       assignments: 
         -
-          deadline: 2024-04-21
+          deadline: 2025-04-21
           title: "HW07 - Static Analysis"
           url: "hws/HW07.html"
     - 
-      date: 2024-04-08
+      date: 2025-04-08
       title: Lecture 20 <br> Program Synthesis
       #slides: "slides/lecture20.pdf"
       recording: ~
@@ -299,7 +299,7 @@
             title: "Lab09 - HashMaps"
             url: "labs/Lab09.html"
     - 
-      date: 2024-04-10
+      date: 2025-04-10
       title: Lecture 21 <br> Program Repair 
       #slides: "slides/lecture21.pdf"
       recording: ~
@@ -309,7 +309,7 @@
         -
           title: "Chapter 11.2 - 11.3 Balanced Trees, AVL Trees"
     - 
-      date: 2024-04-15
+      date: 2025-04-15
       title: Lecture 22 <br> ?????
       slides: "slides/lecture22.pdf"
       recording: ~
@@ -321,7 +321,7 @@
           title: "Lab10 - AVL Trees"
           url: "labs/Lab10.html"
     - 
-      date: 2024-04-17
+      date: 2025-04-17
       title: Lecture 23 <br> ?????
       slides: "slides/lecture23.pdf"
       readings: 
@@ -329,14 +329,14 @@
           title: "Chapter 11.2 - 11.6"
       recording: ~
     -
-      date: 2024-04-21
+      date: 2025-04-21
       assignments:
         -
           title: "HW08 - Project"
-          deadline: 2024-05-09
+          deadline: 2025-05-09
           url: "hws/HW08.html"
     - 
-      date: 2024-04-22
+      date: 2025-04-22
       title: Lecture 24 <br> Recent Advances
       slides: "slides/lecture24.pdf"
       readings:
@@ -352,19 +352,19 @@
               #"<s>HW09 - Google Maps</s>"
               #_url: "labs/Lab00.html"
     - 
-      date: 2024-04-24
+      date: 2025-04-24
       title: Lecture 25 <br> Recent Advances
       slides: "slides/lecture25.pdf"
       readings:
         -
           title: "Chapter 14.1 - Chapter 14.3"
     -
-      date: 2024-04-28
+      date: 2025-04-28
       assignments:
           -
             title: "No Homework"
     -
-      date: 2024-04-29
+      date: 2025-04-29
       title: Lecture 26 <br> Project Presentations 
       #slides: "slides/lecture26.pdf"
       readings: ~
@@ -373,7 +373,7 @@
       #    - 
       #      title: "No Lab - Extra Credit Opportunity"
     - 
-      date: 2024-05-01
+      date: 2025-05-01
       title: Lecture 27 <br> Project Presentations
       #slides: "slides/lecture27.pdf"
       recording: ~
