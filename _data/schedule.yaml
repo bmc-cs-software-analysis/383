@@ -22,8 +22,8 @@
           title: "Simplifying and Isolating Failure-Inducing Input - Andreas Zeller"
       assignments: 
        - 
-          title: "Lab00 - Ad-hoc Testing"
-          url: "labs/Lab00.html"
+          title: "Lab 1 - Ad-hoc Testing"
+          url: "labs/Lab01.html"
           deadline: "2025-01-28"
     - 
       date: 2025-01-29
@@ -44,7 +44,7 @@
       recording: ~
       assignments: 
        - 
-        title: "Lab01 -  Coverage"
+        title: "Lab 2 -  Coverage"
         url: "elizabethdinella.github.io/blog-posts/coverage/"
         deadline: "2025-02-08"
     -
@@ -71,7 +71,7 @@
       #recording: ~
       assignments: 
         - 
-          title: "Lab02 -  Oracles"
+          title: "Lab 3 -  Oracles"
           #url: "labs/Lab03.html"
         
     - 
@@ -92,7 +92,7 @@
       readings:
       assignments: 
         - 
-          title: "Lab04 - Defects4j"
+          title: "Lab 4 - Defects4j"
           #url: "labs/Lab04.html"
         -
           title: "Project 1 - Bug Case Study"
@@ -120,7 +120,7 @@
       #recording: ~
       assignments: 
         - 
-          title: "Lab05 - Project Check in"
+          title: "Lab 5 - Project Check in"
           #url: "labs/Lab05.html"
     -
       date: 2025-02-26
@@ -139,7 +139,7 @@
       #    title: "Chapter 8"
       assignments: 
         - 
-          title: "Lab06 - Project Presentations"
+          title: "Lab 6 - Project Presentations"
         -
            title: "HW05 - Verification"
            deadline: 2025-03-17
@@ -175,7 +175,7 @@
       recording: ~
       assignments: 
         -
-            title: "Lab 7"
+            title: "No Lab"
 
       #readings:
       #    - 
@@ -198,8 +198,10 @@
       readings: ~
       assignments: 
         - 
-          title: "Lab08"
+          title: "Lab 7 - SMT"
       #    url: "labs/Lab08.html"
+        -
+          title: "HW 5 - Verification"
     - 
       date: 2025-03-26
       title: Lecture 17 <br> Symbolic Execution I 
@@ -213,7 +215,7 @@
       assignments: 
         - 
           #deadline: 2023-12-05
-          title: "Lab09"
+          title: "Lab 8 - Symbolic Execution"
           #url: "labs/Lab09.html"
       #readings:
       #  -
@@ -238,7 +240,7 @@
       #    title: "Chapter 12 - Sorting & Selection"
       assignments: 
         -
-            title: "Lab10"
+            title: "Lab 9 - Static Analysis"
             #url: "labs/Lab09.html"
     - 
       date: 2025-04-09
@@ -260,7 +262,7 @@
       #    title: "Chapter 11.2 - 11.6"
       assignments: 
         -
-          title: "Lab10"
+          title: "Lab10 - Project Check in"
           #url: "labs/Lab10.html"
     - 
       date: 2025-04-16
@@ -281,7 +283,7 @@
       assignments: 
         - 
           #deadline: <s>2023-12-14</s>
-          title: "Lab 11"
+          title: "Lab 11 - Project Check in 2"
               #"<s>HW09 - Google Maps</s>"
               #_url: "labs/Lab00.html"
     - 
@@ -299,7 +301,7 @@
       #recording: ~
       assignments:
           - 
-            title: "Lab 12"
+            title: "Lab 12 - Applications (Extra Credit)"
     - 
       date: 2025-04-30
       title: Lecture 27 <br> Project Presentations
