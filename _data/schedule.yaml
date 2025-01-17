@@ -237,9 +237,10 @@
       title: Lecture 20 <br> Static Analysis I
       #slides: "slides/lecture20.pdf"
       #recording: ~
-      #readings:
-      #  -
-      #    title: "Chapter 12 - Sorting & Selection"
+      readings:
+        -
+          title: "Program Abstractions"
+          url: "https://elizabethdinella.github.io/blog-posts/programabstractions/"
       assignments: 
         -
             title: "Lab 9 - Project Check in"
