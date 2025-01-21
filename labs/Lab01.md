@@ -135,22 +135,20 @@ How does this section differ from the previous one regarding testing? Does imple
 Submit both of your test suites and `ParseDate` implementation to Gradescope along with a document reflecting your current thoughts on "What Makes a Good Test Suite". For this lab, there are no definitive right or wrong responses. Next week, we will learn about established test quality metrics. In this assignment, share your insights and observations.
 
 1. Test Suite Quality: 
-  a. What qualities contribute to an effective test suite?
-  b. How might you automatically measure these qualities? Is it feasible?
-  c. If you aimed to make your test suite as ineffective as possible, what changes would you make?
-  d. How did you determine when you had tested sufficiently?
+  a. What qualities contribute to an effective test suite?  
+  b. How might you automatically measure these qualities? Is it feasible?  
+  
+  c. If you aimed to make your test suite as ineffective as possible, what changes would you make?  
+  d. How did you determine when you had tested sufficiently?  
 
-3. Writing Test Suites: 
-  a. What was the most challenging aspect of creating your test suite?
+3. Writing Test Suites:  
+  a. What was the most challenging aspect of creating your test suite?  
+  b. Did you find it easier to write tests for code that you had authored?  
+  c. In Part 2, did you write your tests before or after the implementation? How did that choice affect  your experience? How might things have changed if you had approached it differently?  
+  d. How did you derive assertions? Was the process different for each part? How did you ascertain what the expected values should be?  
 
-  b. Did you find it easier to write tests for code that you had authored?
-
-  c. In Part 2, did you write your tests before or after the implementation? How did that choice affect  your experience? How might things have changed if you had approached it differently?
-
-  d. How did you derive assertions? Was the process different for each part? How did you ascertain what the expected values should be?
-
-5. AI Written tests: For this section use ChatGPT (or your favorite AI assistant) to generate tests for both source files. 
-  a. Write a few sentences assessing the quality of these AI-generated tests.
-     Do they compile?
+5. AI Written tests: For this section use ChatGPT (or your favorite AI assistant) to generate tests for both source files.   
+  a. Write a few sentences assessing the quality of these AI-generated tests.  
+     Do they compile?  
      What are their strengths and weaknesses? What properties do they satisfy or violate?
-     Include specific examples where relevant.
+     Include specific examples where relevant.  
