@@ -18,7 +18,10 @@
       title: Lecture 2 <br> Program Representations and Transformations
       #slides: "slides/lecture02.pdf"
       recording: ~
-      readings:
+      readings: 
+        -
+          title: "Graph Representations in Traditional And Neural Program Analysis"
+          url: "https://docs.google.com/presentation/d/1sVCay3RcKD59q8kCVRSVIR45MmVQvQUGSbBBPiiw1Yk/edit?usp=sharing"
       #  -
       #    title: "Simplifying and Isolating Failure-Inducing Input - Andreas Zeller"
       assignments: 
@@ -43,9 +46,7 @@
     - 
       date: 2025-02-03
       title: Lecture 4 <br> Unit Testing <br> Coverage 
-      readings:
-        -
-          title: "Chapter 3"
+      readings: ~
       #slides: "slides/lecture04.pdf"
       recording: ~
       assignments: 
