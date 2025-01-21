@@ -17,31 +17,10 @@ are here to support you as you learn the material. It's expected that some aspec
 
 The course staff will be holding regular office hours. We have listed their times on our [Office Hours page](https://bmc-cs-151.github.io/office-hours.html).
 
-The [Q-Center](https://www.brynmawr.edu/inside/offices-services/q-center) is a great resource as well. You can book an appointment [online](https://brynmawr.mywconline.net/).
-
-More academic support, e.g. [peer mentors](https://www.brynmawr.edu/inside/offices-services/academic-support/academic-student-support-services/peer-mentors), [academic coaches](https://www.brynmawr.edu/inside/offices-services/academic-support/resources), and others, can be found at [https://www.brynmawr.edu/academicsupport/academic-and-student-support-services](https://www.brynmawr.edu/academicsupport/academic-and-student-support-services). Students are encouraged to reach out to the Director of Academic Support to explore effective learning, studying, test-taking, note-taking and time and stress management strategies that are essential to success in this course and college life. Students can schedule a meeting with the Director of Academic Support by visiting the Office of Academic Support website.
-
-
-### Materials
-The main text is Data Structures and Algorithms by Goodrich, Tamassia and Goldwasser as the required text.
-
-### Homework
-Homework assignments are a required part of the course. Homeworks will be released at the latest Sunday evenings and will be due the following Thursday evening.
-Each student must submit each homework independently, but you are encouraged to discuss problems with other students and course staff. 
-
-
-#### Late days
-Homeworks may be submitted a maximum of two days late. After two days, the submission will be closed and assignments will no longer be accepted. For each day your assignment is late, 10 points will be deducted.
-However, emergencies and unforeseen circumstances inevitably arise. If you are requesting an extension for an unforeseen emergency, please email the professor. Briefly state why you are requesting the extension and a proposed date for submitting the assignment. Poor planning or heavy work loads in other courses are not valid reasons for extensions.
- 
-### Labs
-There are weekly labs. The labs are designed to be a space where you will get more experience programming. 
-
 ### Academic Integrity 
 
 At Bryn Mawr, we assume students are trustworthy and work with honesty and integrity. [Look here for information about Bryn Mawr’s Honor Code](https://www.brynmawr.edu/inside/offices-services/deans-office/academic-community-integrity).
 
-As you progress in this course, you will see that programming is a creative process, similar to writing. The same problem can be solved in multiple ways. It’s essential that you develop your own skills for developing algorithms and implementing them through programs.
 
 #### Academic Integrity in Computer Science
 
@@ -49,20 +28,9 @@ As you progress in this course, you will see that programming is a creative proc
 
 * All code you submit should be your own with the following permissible exceptions: code distributed in class, and code found in the course text book. In these cases, you should always include detailed comments that indicates on which parts of the assignment you received help, and what your sources were.
 
-* Please don’t hesitate to ask the awesome teaching assistants (TAs) for help. They provide TA hours most week nights and are excellent mentors!
-
-* Please discuss the readings and associated topics with each other. Work together to understand the material. Reading groups to discuss the material are highly recommended — we will explore many ideas and it helps to have multiple people working together to understand them.
-
-* It is fine to discuss the topics covered in the homeworks, to discuss approaches to problems, and to sketch out general solutions. However, you MUST write up the homework answers, solutions, and programs individually without sharing specific details, mathematical results, program code, etc.
-
-* Under NO circumstances should you share computer code with another student. Similarly, you are **not permitted to use code found on the internet for any of your assignments**.
-
-* Exams, of course, must be your own individual work.
-
 
 ### Academic Accommodations
 
-All classes will be recorded and close-captioned. Links to lectures will be posted on the class syllabus.
 
 Any student who has a disability-related need to record this class first must speak with the Director of Access Services, Deb Alder, as part of university policy. Class members need to be aware that this class may be recorded.
 
