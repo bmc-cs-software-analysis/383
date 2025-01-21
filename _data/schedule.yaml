@@ -153,9 +153,10 @@
     - 
       date: 2025-03-05
       title: Lecture 13 <br> SBST <br> AFL
-      #readings:
-      #  -
-      #    title: "Chapter 8"
+      readings:
+        -
+          title: "Leveling up Fuzzing: Finding more Vulnerabilities with AI"
+          url: "https://security.googleblog.com/2024/11/leveling-up-fuzzing-finding-more.html"
       #slides: "slides/lecture12.pdf"
       recording: ~
     - 
