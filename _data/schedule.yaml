@@ -281,9 +281,10 @@
       date: 2025-04-21
       title: Lecture 24 <br> Recent Advances
       #slides: "slides/lecture24.pdf"
-      #readings:
-      #  -
-      #    title: "Chapter 10.5"
+      readings:
+        -
+          title: "Prompts are Programs"
+          url: "https://blog.sigplan.org/2024/10/22/prompts-are-programs/"
       recording: ~
       assignments: 
         - 
