@@ -15,7 +15,7 @@
        #   url: "labs/Lab01.html"
     - 
       date: 2025-01-27
-      title: Lecture 2 <br> Program Representations and Transformations
+      title: Lecture 2 <br> Program Representations
       #slides: "slides/lecture02.pdf"
       recording: ~
       readings: 
@@ -31,7 +31,7 @@
           deadline: "2025-02-02"
     - 
       date: 2025-01-29
-      title: Lecture 3 <br> Program Representations and Transformations II
+      title: Lecture 3 <br> Program Representations II and Transformations
 
       #slides: "slides/lecture03.pdf"
       recording: ~
