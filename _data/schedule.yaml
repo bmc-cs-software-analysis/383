@@ -32,12 +32,12 @@
     - 
       date: 2025-01-29
       title: Lecture 3 <br> Program Representations II and Transformations
-
       #slides: "slides/lecture03.pdf"
       recording: ~
-      #readings:
-      #  -
-      #  title: "Chapter 2.5"
+      readings:
+        -
+        title: "Visitor Design Pattern (pages 331-344)"
+        url: "https://github.com/GunterMueller/Books-3/blob/master/Design%20Patterns%20Elements%20of%20Reusable%20Object-Oriented%20Software.pdf"
       assignments:
         -
           title: "HW01 - Program Transformations"
