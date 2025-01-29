@@ -147,7 +147,7 @@ Submit both of your test suites and `ParseDate` implementation to Gradescope alo
   d. How did you derive assertions? Was the process different for each part? How did you ascertain what the expected values should be?  
 
 3. **AI Written tests:** For this section use ChatGPT (or your favorite AI assistant) to generate tests for both source files.  
-  a. Write a few sentences assessing the quality of these AI-generated tests.  
+  a. Write a few sentences assessing the quality of these AI-generated tests. Specify whcih AI assistant you used.
      Do they compile?  
      What are their strengths and weaknesses? What properties do they satisfy or violate?  
      Include specific examples where relevant.  
