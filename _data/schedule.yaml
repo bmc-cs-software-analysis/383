@@ -57,6 +57,10 @@
     -
       date: 2025-02-05
       title: Lecture 5 <br> Unit Testing <br> Test Oracles <br> Mutation Testing
+      readings:
+        -
+          title: "State of Mutation Testing at Google"
+          url: "https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46584.pdf"
       #assignments: 
         #-
         #    title: "Lab01 - Coverage"
