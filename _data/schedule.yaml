@@ -61,6 +61,9 @@
         -
           title: "State of Mutation Testing at Google"
           url: "https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46584.pdf"
+        -
+          title: "On the Use of Large Language Models in Mutation Testing"
+          url: "https://web.eecs.umich.edu/~movaghar/Mutation%20Testing%20LLM%202025.pdf"
       #assignments: 
         #-
         #    title: "Lab01 - Coverage"
