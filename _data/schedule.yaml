@@ -45,9 +45,9 @@
           deadline: "2025-02-12"
     - 
       date: 2025-02-03
-      title: Lecture 4 <br> Unit Testing <br> Coverage 
+      title: Lecture 4 <br> Program Transformations <br> Unit Testing <br> Coverage 
       readings: ~
-      #slides: "slides/lecture04.pdf"
+      slides: "slides/lecture04.pdf"
       recording: ~
       assignments: 
        - 
@@ -56,7 +56,7 @@
         deadline: "2025-02-09"
     -
       date: 2025-02-05
-      title: Lecture 5 <br> Unit Testing <br> Test Oracles <br> Mutation Testing
+      title: Lecture 5 <br> Test Oracles <br> Mutation Testing
       readings:
         -
           title: "State of Mutation Testing at Google"
