@@ -56,14 +56,9 @@
         deadline: "2025-02-09"
     -
       date: 2025-02-05
-      title: Lecture 5 <br> Test Oracles <br> Mutation Testing
-      readings:
-        -
-          title: "State of Mutation Testing at Google"
-          url: "https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46584.pdf"
-        -
-          title: "On the Use of Large Language Models in Mutation Testing"
-          url: "https://web.eecs.umich.edu/~movaghar/Mutation%20Testing%20LLM%202025.pdf"
+      title: Lecture 5 <br> Test Oracles 
+      readings: ~
+        
       #assignments: 
         #-
         #    title: "Lab01 - Coverage"
@@ -74,12 +69,19 @@
 
     - 
       date: 2025-02-10
-      title: Lecture 6 <br> Specifications I
+      title: Lecture 6 <br> Mutation Testing
       #readings:
       #  -
       #    title: "Chapter 3"
       #slides: "slides/lecture05.pdf"
       #recording: ~
+      readings: 
+        -
+          title: "State of Mutation Testing at Google"
+          url: "https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46584.pdf"
+        -
+          title: "On the Use of Large Language Models in Mutation Testing"
+          url: "https://web.eecs.umich.edu/~movaghar/Mutation%20Testing%20LLM%202025.pdf"
       assignments: 
         - 
           title: "Lab 3 -  Oracles"
@@ -87,7 +89,7 @@
         
     - 
       date: 2025-02-12
-      title: Lecture 7 <br> Specifications II
+      title: Lecture 7 <br> Specifications
       #slides: "slides/lecture06.pdf"
       recording: ~
       #readings:
