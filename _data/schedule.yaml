@@ -57,15 +57,15 @@
     -
       date: 2025-02-05
       title: Lecture 5 <br> Test Oracles 
-      readings: ~
-        
+      readings: 
+        -
+          title: "Automatic Generation of Oracles for Exceptional Behaviors"
+          url: "https://homes.cs.washington.edu/~mernst/pubs/exception-oracles-issta2016.pdf"
       #assignments: 
         #-
         #    title: "Lab01 - Coverage"
         #  #url: "hws/HW01.html"
         #  deadline: "2025-02-08"
-
-        
 
     - 
       date: 2025-02-10
