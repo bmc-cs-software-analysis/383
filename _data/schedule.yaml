@@ -57,6 +57,7 @@
     -
       date: 2025-02-05
       title: Lecture 5 <br> Test Oracles 
+      slides: "slides/lecture05.pdf"
       readings: 
         -
           title: "Automatic Generation of Oracles for Exceptional Behaviors"
