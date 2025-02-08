@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Linked List"
+title: "Mutation Testing"
 type: Lab
 number: 03
 active_tab: lab
-release_date: 2023-09-20
+release_date: 2025-02-09
 
 ---
 
@@ -51,116 +51,93 @@ You can download the materials for this assignment here:
 =============================================================
 
 
-In this lab, you will build two data structures to hold `City` objects: a Singly Linked List (`CitySLL`) and a Doubly Linked List (`CityDLL`).
+You can optionally work with a partner on this lab. You should each submit separately to gradescope, but it can be the exact same document. 
 
 ## Objectives:
 
 The main goals for this lab are:
 
-1. Practice with linked lists
+1. Run a mutation tester to evaluate your test suite.
+2. Design, implement, and evaluate a mutation operator.
 
-You will need to have a TA check off on all your exercises.
-If you do not complete the lab during the lab session, you
-must have a TA check off all your exercises during office hours.
+Code coverage is the established standard metric for assessing test suite quality. In the last lab, we saw that even with a test suite that achieves the most rigorous measure of coverage (100% feasible path coverage), bugs may still go undetected. In this lab, we’ll continue the discussion on how to measure and improve test suite quality. Coverage alone is not enough. Test oracles are also important to high quality tests that can detect faults. A test oracle describes the correct output based on an input and is often written as an assertion.
 
-> Notes: in this lab you are not allowed to include any `import` statements.
+Consider a test suite with full coverage, but without any assertions. Would it be able to find any bugs? 
 
-### Paired Programming rules
-This lab is a **paired programming assignment.** What exactly does that mean? 
-You will be working in pairs on the CS lab computers. Each pair will be working on one computer. One person will be the **driver** and the other person
- will be the **navigator**. Here is the rule: the **driver** controlls the lab computer, but the **driver** can only type what the **navigator** tells 
-them to type. For this to work well, each pair should be constantly talking 
-among themselves. After each problem, you will switch roles, the navigator will become the driver and the driver will become the navigator.
+<details>
+<summary>>>Answer:</summary>
+It would only be able to find violations in safety properties (things that should be true across all java programs), but it would not be able to find violations in functional properties. In our [BuyTicket](https://github.com/elizabethdinella/code-coverage/blob/main/src/BuyTicket.java) code from last lab, BUG 1 could be detected without assertions but BUG 2 could not. 
+</details>
 
+Mutation testing involves modifying the program in small ways to evaluate the quality of a test suite. Each mutated version is called a mutant and tests detect and reject mutants by causing the behavior of the original version to differ from the mutant. This is called killing the mutant. Test suites are measured by their mutation score which is a percentage of mutants that they kill. In this lab you will get familiar with mutation testing through running a mutation tester and designing, implementing, and evaluating your own mutation operator.  
 
-### Testing
+Remember in the previous lab you added two tests. One for seniors and one for minors which triggered a bug. For a customerAge < 18, the  expression (customerAge - 65) / maxDiscount results in a negative value, which incorrectly reduces the discount rate.
 
-We have provided a file called 
+Pitest requires that your tests pass. So, for this lab, download the corrected source from here: 
+`wget https://bmc-cs-software-analysis.github.io/383/labs/lab03/BuyTicket.java`
 
-<a href="{{ site.url }}{{ site.baseurl }}/labs/lab03/Lab03Tests.java">
-`Lab03Tests.java`
-</a>
-that you can use 
-to test your code.
-You can download it by running:
+The bug is fixed by adding a special case for ticket buyers under 18 and correctly subtracting customerAge from 18. It also includes helper methods for checking if the customer is eligible for an age discount. 
 
-```
-wget https://raw.githubusercontent.com/BMC-CS-151/BMC-CS-151.github.io/main/labs/lab03/Lab03Tests.java Lab03Tests.java
-```
-Compiling this file will result in errors since we haven't implemented necessary components yet. As you code, frequently compile. In general, this is a good debugging strategy.
+Setup:
+1. Download the pitest jars and put them in a directory named `lib/`
+    a. `wget https://repo1.maven.org/maven2/org/pitest/pitest/1.18.0/pitest-1.18.0.jar`
+    b. `wget https://repo1.maven.org/maven2/org/pitest/pitest-command-line/1.18.0/pitest-command-line-1.18.0.jar`
+    c. `wget https://repo1.maven.org/maven2/org/pitest/pitest-junit5-plugin/1.2.1/pitest-junit5-plugin-1.2.1.jar`
+    d. `wget https://repo1.maven.org/maven2/org/pitest/pitest-entry/1.18.0/pitest-entry-1.18.0.jar`
+2. Download the run_pitest.sh script I’ve created: `wget https://bmc-cs-software-analysis.github.io/383/labs/lab03/run_pitest.sh`
+3. Copy over your tests from the previous lab. 
+4. Move the hamcrest and junit jars from the previous lab to the `lib` directory. 
 
-## Exercise 1: City
-
-Design a class `City` that represents a city. It should have instance variables to store the
-following information. Include appropriate constructor, getters, setters and `toString`.
-1. name of the city
-2. population
-
-## Exercise 2: Singly Linked List
-Implement a singly linked list that stores a list of `City`s. 
-Call the class `CitySLL`.
-
-### 2.1. Node class
- Create the appropriate `Node` class that supports `CitySLL`, as a nested inner class of
-`CitySLL`
-
-### 2.2 Methods:
- Implement the following methods:
-  1. `size` - determines how many `City`s are in the LinkedList
-  2. `isEmpty` - determines if the LinkedList does not contain any `City`s
-  3. `first` - Returns (but does not remove) the first element
-  4. `last` - Returns (but does not remove) the last element
-  5. `insertFirst` - Adds a new element to the front of the list
-  6. `insertBack` - Adds a new element to the back of the list
-  7. `toString()` - Override toString to print out a list of all stored city names
-
-> Hint: In class we made a very barebones LinkedList where we only kept track
-> of the first node. In this LinkedList, you are allowed to use private instance variables
-> that can help you make these methods faster.
-
-You will be using and adding more functionality to your `ExpandableArray` in Homework02.
-
-## Exercise 3: Doubly Linked List
-Implement a Doubly linked list that stores a list of `City`s. 
-Call the class `CityDLL`.
-
-### 3.1 Node class
-Repeat the instructions from [2.1 Node class](#21-node-class).
-However, make sure that the node class supports a doubly linked list.
-
-### 3.2 Methods:
-  Implement the following methods:
-   1. Repeat the instructions from [2.2 Methods](#22-methods).
-   2. Implement a helper method called `insertBefore(City c, Node n)` so that you can insert a `City` c just
-before some `Node` n
-   3. Use `insertBefore` to implement `insertSortedAlpha(City c)` so that a `City` c is inserted
-into the list in alphabetically descending sorted order. This means Albuquerque should be before Bryn Mawr which should Chicago which should be before Dallas which should be before Haverford. This method can assume the LinkedList is already sorted. Hint: use compareTo to compare strings.
-   4. Use `insertBefore` to implement `insertSortedPop(City c)` so that when a `City` c is inserted into the list,
-the list is sorted in order of population in ascending order. This means that a `City` with 1 person would be
-before a `City` with 1,000 people which would be before a `City` with 100,000 people. This method can assume the LinkedList is already sorted.
-
-## Testing
-After compiling the test class, make sure to include the `ea` flag when running
-the program:
-
-```
-java -ea Lab03Tests
-```
-
-This will ensure that all tests actually run. We are using `assert`
-to test your code.
-There are a total of 56 `assert` statements. Maybe of
-these `assert` statements are in loops so we 
-have a lot more than 56 tests!
+Your directory structure should look like this:
+.
+├── run_pitest.sh
+├── src
+│   └── BuyTicket.java
+├── lib
+│   └── JARS
+└── test
+    └── TestBuyTicket.java
 
 
-## Wrap up
+**Part 1: Running Pitest**
 
-In todays lab we covered Singly and Doubly LinkedLists.
+Evaluate the quality of your test suite by running run_pitest.sh 
+Open pitest-report/index.html in a browser of your choice and inspect the mutations that survived.
+Clicking on “Covering tests” for the surviving mutants (highlighted in red), you will see the test which cover the mutated region, but do not kill the mutant. 
 
-### Signing out
-Before leaving, make sure your TA/instructor have signed you out of the lab. If you finish the lab early, you are free to go.
-If you do not finish the lab in time, you will need to go to office hours so
-that a TA can check your work.
+**Exercise:** Add tests to your TestBuyTicket.java which kill the surviving mutants. 
 
+Useful information about each mutation type is given in the [pitest documentation](https://pitest.org/quickstart/mutators/)
+
+**Part 2: Design your Own Mutation Operator**
+
+In this part of the assignment, you will design your own program mutation operator and evaluate its effectiveness. You will not be graded on the quality of your mutation but instead, the quality of your evaluation. 
+
+Pitest does mutations on the bytecode level but you’re not required to do so. The only requirement is that your mutation creates at least two syntactic mutants to BuyTicket. 
+
+To help evaluate your mutation, I’ve included a benchmark of test suites:
+`wget https://bmc-cs-software-analysis.github.io/383/labs/lab03/tests.zip`
+
+Evaluation:
+1. How many mutants did your mutation create? Remember that the requirements state you must have at least 2. Include the program before and after transformation in your report clearly indicating the transformation. 
+2. For each test suite, categorize the mutants based on their behavior:
+    a. Survived (not killed by tests)
+    b. Killed (detected by at least one test)
+    c. Equivalent (mutants that produce identical behavior to the original program, making them undetectable)
+3. Compilation rate of mutants:
+    a. How many of your generated mutants compile successfully? 
+    b. If any mutants fail to compile, explain why.
+4. Mutation score for each test suite
+5. A qualitative evaluation of your mutation:
+    a. Do the given mutation scores align with what you expect? Do the bad test suites have lower scores than the good test suites? why / why not? 
+    b. Did your mutation create realistic faults that resemble real-world bugs?
+6. Other questions:
+    a. What program representation does your transformation operate over and why? 
+    b. If you worked with a partner, state both of your names at the top of this document.
+
+
+### Submission 
+1. `TestBuyTicket.java`
+2. Your mutation operator code
+3. Lab report answering the questions in Part 2
 
