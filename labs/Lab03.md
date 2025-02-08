@@ -79,24 +79,24 @@ Pitest requires that your tests pass. So, for this lab, download the corrected s
 The bug is fixed by adding a special case for ticket buyers under 18 and correctly subtracting customerAge from 18. It also includes helper methods for checking if the customer is eligible for an age discount. 
 
 Setup:
-1. Download the pitest jars and put them in a directory named `lib/`
-    a. `wget https://repo1.maven.org/maven2/org/pitest/pitest/1.18.0/pitest-1.18.0.jar`
-    b. `wget https://repo1.maven.org/maven2/org/pitest/pitest-command-line/1.18.0/pitest-command-line-1.18.0.jar`
-    c. `wget https://repo1.maven.org/maven2/org/pitest/pitest-junit5-plugin/1.2.1/pitest-junit5-plugin-1.2.1.jar`
-    d. `wget https://repo1.maven.org/maven2/org/pitest/pitest-entry/1.18.0/pitest-entry-1.18.0.jar`
-2. Download the run_pitest.sh script I’ve created: `wget https://bmc-cs-software-analysis.github.io/383/labs/lab03/run_pitest.sh`
-3. Copy over your tests from the previous lab. 
-4. Move the hamcrest and junit jars from the previous lab to the `lib` directory. 
+1. Download the pitest jars and put them in a directory named `lib/`  
+    a. `wget https://repo1.maven.org/maven2/org/pitest/pitest/1.18.0/pitest-1.18.0.jar`  
+    b. `wget https://repo1.maven.org/maven2/org/pitest/pitest-command-line/1.18.0/pitest-command-line-1.18.0.jar`  
+    c. `wget https://repo1.maven.org/maven2/org/pitest/pitest-junit5-plugin/1.2.1/pitest-junit5-plugin-1.2.1.jar`  
+    d. `wget https://repo1.maven.org/maven2/org/pitest/pitest-entry/1.18.0/pitest-entry-1.18.0.jar`  
+2. Download the run_pitest.sh script I’ve created: `wget https://bmc-cs-software-analysis.github.io/383/labs/lab03/run_pitest.sh`  
+3. Copy over your tests from the previous lab.   
+4. Move the hamcrest and junit jars from the previous lab to the `lib` directory.   
 
 Your directory structure should look like this:
 .
-├── run_pitest.sh
-├── src
-│   └── BuyTicket.java
-├── lib
-│   └── JARS
-└── test
-    └── TestBuyTicket.java
+├── run_pitest.sh  
+├── src  
+│   └── BuyTicket.java  
+├── lib  
+│   └── JARS  
+└── test  
+    └── TestBuyTicket.java  
 
 
 **Part 1: Running Pitest**
