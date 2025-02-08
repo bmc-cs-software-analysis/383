@@ -121,19 +121,19 @@ To help evaluate your mutation, I’ve included a benchmark of test suites:
 Evaluation:
 1. How many mutants did your mutation create? Remember that the requirements state you must have at least 2. Include the program before and after transformation in your report clearly indicating the transformation. 
 2. For each test suite, categorize the mutants based on their behavior:
-    a. Survived (not killed by tests)
-    b. Killed (detected by at least one test)
-    c. Equivalent (mutants that produce identical behavior to the original program, making them undetectable)
-3. Compilation rate of mutants:
-    a. How many of your generated mutants compile successfully? 
-    b. If any mutants fail to compile, explain why.
+    a. Survived (not killed by tests)  
+    b. Killed (detected by at least one test)  
+    c. Equivalent (mutants that produce identical behavior to the original program, making them undetectable)  
+3. Compilation rate of mutants:  
+    a. How many of your generated mutants compile successfully?   
+    b. If any mutants fail to compile, explain why.  
 4. Mutation score for each test suite
-5. A qualitative evaluation of your mutation:
-    a. Do the given mutation scores align with what you expect? Do the bad test suites have lower scores than the good test suites? why / why not? 
-    b. Did your mutation create realistic faults that resemble real-world bugs?
-6. Other questions:
-    a. What program representation does your transformation operate over and why? 
-    b. If you worked with a partner, state both of your names at the top of this document.
+5. A qualitative evaluation of your mutation:  
+    a. Do the given mutation scores align with what you expect? Do the bad test suites have lower scores than the good test suites? why / why not?   
+    b. Did your mutation create realistic faults that resemble real-world bugs?  
+6. Other questions:  
+    a. What program representation does your transformation operate over and why?   
+    b. If you worked with a partner, state both of your names at the top of this document.  
 
 
 ### Submission 
