@@ -96,7 +96,7 @@ Your directory structure should look like this:
 ├── lib  
 │   └── JARS  
 └── test  
-    └── TestBuyTicket.java  
+        └── TestBuyTicket.java  
 
 
 **Part 1: Running Pitest**
