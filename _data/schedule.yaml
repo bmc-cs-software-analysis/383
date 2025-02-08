@@ -85,8 +85,8 @@
           url: "https://web.eecs.umich.edu/~movaghar/Mutation%20Testing%20LLM%202025.pdf"
       assignments: 
         - 
-          title: "Lab 3 -  Oracles"
-          #url: "labs/Lab03.html"
+          title: "Lab 3 -  Mutation Testing"
+          url: "labs/Lab03.html"
         
     - 
       date: 2025-02-12
