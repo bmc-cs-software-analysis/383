@@ -88,8 +88,8 @@ Setup:
 3. Copy over your tests from the previous lab.   
 4. Move the hamcrest and junit jars from the previous lab to the `lib` directory.   
 
-Your directory structure should look like this:
-.
+Your directory structure should look like this:  
+.  
 ├── run_pitest.sh  
 ├── src  
 │   └── BuyTicket.java  
