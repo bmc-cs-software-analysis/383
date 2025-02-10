@@ -94,11 +94,11 @@
       #slides: "slides/lecture06.pdf"
       recording: ~
       #readings:
-      assignments:
-       - 
-          deadline: 2025-02-18
-          title: "HW02 -  Fuzzing"
-          url: "hws/HW02.html"
+      #assignments:
+        # - 
+        #  deadline: 2025-02-18
+        #  title: "HW02 -  Fuzzing"
+        #  url: "hws/HW02.html"
     -
       date: 2025-02-17
       title: Lecture 8 <br> Testing - An Overview <br> Defects4j
