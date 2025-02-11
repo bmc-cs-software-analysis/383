@@ -42,7 +42,7 @@
         -
           title: "HW01 - Program Transformations"
           url: "hws/HW01.html"
-          deadline: "2025-02-12"
+          deadline: "2025-02-14"
     - 
       date: 2025-02-03
       title: Lecture 4 <br> Program Transformations <br> Unit Testing <br> Coverage 
@@ -87,7 +87,7 @@
         - 
           title: "Lab 3 -  Mutation Testing"
           url: "labs/Lab03.html"
-        
+          deadline: 2025-02-17
     - 
       date: 2025-02-12
       title: Lecture 7 <br> Specifications
@@ -122,7 +122,7 @@
         -
           deadline: 2025-02-22
           title: "HW03 -  Specifications"
-          url: "hws/HW03.html"
+          #url: "hws/HW03.html"
 
     -
       date: 2025-02-24
