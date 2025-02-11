@@ -90,10 +90,13 @@
           deadline: 2025-02-17
     - 
       date: 2025-02-12
-      title: Lecture 7 <br> Specifications
+      title: Lecture 7 <br> Test Oracles II
       #slides: "slides/lecture06.pdf"
       recording: ~
-      #readings:
+      readings:
+        -
+          title: "Notes on Formal Grammars"
+          url: "https://web.stanford.edu/class/archive/cs/cs143/cs143.1128/handouts/080%20Formal%20Grammars.pdf"
       #assignments:
         # - 
         #  deadline: 2025-02-18
