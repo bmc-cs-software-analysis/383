@@ -104,15 +104,22 @@
         #  url: "hws/HW02.html"
     -
       date: 2025-02-17
-      title: Lecture 8 <br> Testing - An Overview <br> Defects4j
+      title: Lecture 8 <br> Randomized Testing <br> Defects4j
       #slides: "slides/lecture07.pdf"
       readings:
+        - 
+          title: "Feedback-directed Random Test Generation"
+          url: "https://homes.cs.washington.edu/%7Emernst/pubs/feedback-testgen-icse2007.pdf"
       assignments: 
         - 
-          title: "Lab 4 - Defects4j"
+          title: "Lab 4 - Randoop and Defects4j"
           #url: "labs/Lab04.html"
         -
-          title: "Project 1 - Bug Case Study"
+          deadline: 2025-02-22
+          title: "HW02 - Assertion Inference"
+          #url: "hws/HW03.html"
+
+        
     - 
       date: 2025-02-19
       title: Lecture 9 <br> SBST <br> Genetic Algorithms 
@@ -123,8 +130,9 @@
       recording: ~
       assignments: 
         -
-          deadline: 2025-02-22
-          title: "HW03 -  Specifications"
+          #deadline: 2025-02-22
+          title: "Project 1 - Bug Case Study"
+          #title: "HW03 -  Specifications"
           #url: "hws/HW03.html"
 
     -
