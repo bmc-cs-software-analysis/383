@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Interfaces"
+title: "Defects4J"
 type: Lab
 number: 04
 active_tab: lab
-release_date: 2024-02-12
+release_date: 2025-02-16
 
 ---
 
@@ -45,139 +45,90 @@ You can download the materials for this assignment here:
 
 
 
-
-
 {{page.type}} {{page.number}}: {{page.title}}
 =============================================================
 
+This lab is optionally a partner assignment. Make sure your document specifies if you worked with a partner.
 
 ## Objectives:
 
-The main goals for this lab are:
+In this lab, you will explore randomized test generation using Randoop and evaluate the resulting test suites across several dimensions. You will consider the strengths and weaknesses by running them on real-world bugs using the Defects4j benchmark.
 
-1. Practice with Interfaces
-1. Implement a Custom Exception
+1. Run the randomized testing tool Randoop 
+2. Observe its outputs on the Defects4J benchmark
 
-You will need to have a TA check off on all your exercises.
-If you do not complete the lab during the lab session, you
-must have a TA check off all your exercises during office hours.
-You must get this lab checked off by the due date for HW03.
+First, read the Abstract, Introduction, and Section 3 of the [Defects4j publication](https://homes.cs.washington.edu/~mernst/pubs/bug-database-issta2014.pdf).Since the paper was published in 2014, the authors have extended the benchmark to 854 bugs from additional projects.
 
-> Notes: in this lab you are not allowed to include any `import` statements unless specified.
+## Setup
+1. [Defects4J](https://github.com/rjust/defects4j) - Defects4j should already be installed in goldengate. If you would like to run this locally, follow the installation instructions in the README. 
 
-### Menu
+In this lab you will study bugs in the [Chart](https://www.jfree.org/jfreechart/) project. The Chart project is a Java chart library for programatically creating professional quality charts. Explore [this page](https://www.jfree.org/jfreechart/samples.html) for some examples.
 
-The menu at a lunch counter includes a variety of sandwiches, salads, and drinks. The menu also allows
-a customer to create a “trio,” which consists of three menu items, one of each category: a sandwich, a
-salad, and a drink. Each menu item has a name and a price. The four types of menu items are
-represented by the four classes `Sandwich`, `Salad`, `Drink`, and `Trio`. All four classes implement the
-following `MenuItem` interface.
+You will repeat the below steps 1-3 for each bug in the following list:
+Chart 1, Chart 11, and Chart 15.
 
-```
-public interface MenuItem {
-/**
-* @returns the name of the menu item
-*/
-String getName();
-/**
-* @return the price of the menu item
-*/
-double getPrice();
-}
-```
+## Part 1: Checking out your bug
 
-Download the interface online from
-`wget https://raw.githubusercontent.com/BMC-CS-151/BMC-CS-151.github.io/main/labs/lab04/MenuItem.java .`
+**Resources**
+- [d4j checkout documentation](http://defects4j.org/html_doc/d4j/d4j-checkout.html)
+- [d4j info documentation](http://defects4j.org/html_doc/d4j/d4j-info.html)
+- [d4j dissection](https://program-repair.org/defects4j-dissection/#!/)
 
-The following diagram shows the relationship between the `MenuItem` interface and the `Sandwich`,
-`Salad`, `Drink`, and `Trio` classes:
+As a first step, checkout your bug and open the project in an IDE of your choice. Defects4J abstracts the process of checking out a buggy version of the benchmark project with the `defects4j checkout` command. 
 
-<img src="lab04/lab04.png" alt="drawing" width="700"/>
+Run `defects4j checkout -p Chart -v <BUGNUM>b -w <OUTPUT_DIR>` to checkout your bug. A documentation page with more information on the parameters is linked in the resources.
 
-For example, assume that the menu includes the following items. The objects listed under each heading
-are instances of the class indicated by the heading:
+### Inspecting the Developer Written Test
 
-<img src="lab04/lab04_2.png" alt="drawing" width="700"/>
+After a bug is found and fixed, developers usually write a test case to ensure that the bug does not reoccur. In this subpart, you will analyze a developer-written test case that was introduced after the bug was fixed. 
 
-The name of the `Trio` consists of the names of the sandwich, salad, and drink, in that order, each
-separated by “/” and followed by a space and then “Trio”. The price of the `Trio` is the sum of the two
-highest-priced items in the `Trio`; one item with the lowest price is free. A trio consisting of a
-cheeseburger, spinach salad, and an orange soda would have the name "Cheeseburger/Spinach
-Salad/Orange Soda Trio" and a price of $4.00 (the two highest prices are $2.75 and $1.25).
-Similarly, a trio consisting of a club sandwich, coleslaw, and a cappuccino would have the name "Club
-Sandwich/Coleslaw/Cappuccino Trio" and a price of $6.25 (the two highest prices are $2.75
-and $3.50).
+Each bug in Defects4j includes a test case added by the developer who fixed the issue. This test case serves to verify the bug was addressed. An ideal automated test generation tool (such as Randoop) would have found this bug before it was introduced, thus preventing it.
 
-## Exercise 1
-
-Implement the `Sandwich`, `Salad` and `Drink` classes as specified. Download the driver program:
-`wget https://raw.githubusercontent.com/BMC-CS-151/BMC-CS-151.github.io/main/labs/lab04/Lab4.java .`
-
-Comment out the code for Exercise 2 and test with it:
-
-```java
-public static void main(String[] args) {
-  Sandwich burger = new Sandwich("Cheeseburger",2.75);
-  Sandwich club = new Sandwich("Club Sandwich", 2.75);
-  Salad spinachSalad = new Salad("Spinach Salad",1.25);
-  Salad coleslaw = new Salad("Coleslaw", 1.25);
-  Drink orange = new Drink("Orange Soda", 1.25);
-  Drink cap = new Drink("Cappuccino", 3.50);
-  System.out.println(burger.getName()+ " " + burger.getPrice());
-  System.out.println(club.getName()+ " " + club.getPrice());
-  System.out.println(spinachSalad.getName()+ " " +
-                     spinachSalad.getPrice());
-  System.out.println(coleslaw.getName()+ " " +
-                     coleslaw.getPrice());
-  System.out.println(orange.getName()+ " " + orange.getPrice());
-  System.out.println(cap.getName()+ " " + cap.getPrice());
-}
-```
-
-## Exercise 2: Trio Class
-Implement the `Trio` class as specified. Uncomment the Exercise 2 tests and run the driver program:
-
-```java
-public static void main(String[] args) {
-  Sandwich burger = new Sandwich("Cheeseburger",2.75);
-  Sandwich club = new Sandwich("Club Sandwich", 2.75);
-  Salad spinachSalad = new Salad("Spinach Salad",1.25);
-  Salad coleslaw = new Salad("Coleslaw", 1.25);
-  Drink orange = new Drink("Orange Soda", 1.25);
-  Drink cap = new Drink("Cappuccino", 3.50);
-  Trio trio1 = new Trio(burger, spinachSalad, orange);
-  System.out.println(trio1.getName());
-  System.out.println(trio1.getPrice());
-  Trio trio2 = new Trio(club,coleslaw,cap);
-  System.out.println(trio2.getName());
-  System.out.println(trio2.getPrice());
-}
-```
-
-## Exercise 3: IllegalTrioException
-Modify the `Trio` class so that it throws a `IllegalTrioException` when
-anyone attempts to create a `Trio` combining three items of the same price (I don’t know why,
-because giving away a third that’s not “cheaper” isn’t allowed? – no, I just needed to make up a
-reason for you to custom-design an exception!). Add code in your driver to test it.
-
-## Exercise 4: Comparable 
-Modify the `Trio` class to also implement `Comparable`. The ordering of the
-`Trios` depends on their prices – the more expensive `Trio` is “larger”. 
-The distance between `Trio`s should be based on the price difference.
-Provide code in your
-driver to test it. Feel free to make up lots more sandwiches, salads and drinks to have some
-variety. Putting a bunch of `Trios` in an array and then call `Array.sort` on them is a good
-way to test.
-
-> Note: You can import `java.util.Arrays` to test your implementation here. 
-
-## Wrap up
-
-In todays lab we covered Interfaces, Creating Custom Exceptions, and Comparable.
-
-### Signing out
-Before leaving, make sure your TA/instructor have signed you out of the lab. If you finish the lab early, you are free to go.
-If you do not finish the lab in time, you will need to go to office hours so
-that a TA can check your work.
+1. **Find the Developer Written Test**
+Run the following command to gather information about the bug:
+`defects4j info -p Chart -b <BUG NUM>`
+The output will include details about the "triggering" test. Go to the developer-written test case and open it for inspection. You can also refer to the Defects4j Dissection website to locate this test. 
 
 
+2. **Read and Analyze the Test**
+    Carefully read the test case the developer wrote for the bug fix. Try to understand what the bug was and how the test ensures the bug is fixed. For each bug, describe the bug in a few sentences. Include whether the triggering test expose a safety or functional property violation?
+
+By understanding the developer's test, you will get insight into what an ideal automated test generation tool should catch. This analysis will serve as a basis for evaluating the automated tests you will generate in the next steps.
+
+## Part 2: Generating Randoop Tests
+In this part you will use Randoop to generate tests for each class containing a bug. As you know from previous assignments, it can be tricky to get the java class path right to compile and execute tests. Defects4j provides scripts to abstract the process of directly calling the test generation tools. 
+
+**Resources**
+- [d4j gen_tests command](http://defects4j.org/html_doc/gen_tests.html)
+- [d4j test command](http://defects4j.org/html_doc/d4j/d4j-test.html)
+- [d4j coverage command](http://defects4j.org/html_doc/d4j/d4j-coverage.html)
+- [Randoop documentation](https://randoop.github.io/randoop/)
+
+Generate tests using the following command:  
+`gen_tests.pl -g randoop -p Chart -v <BUGNUM>b -n 1 -o lab4/ -b 60 -E`
+Replace "<BUGNUM>" with the bug number you are targetting. 
+You can replace `lab4/` with wherever you would like the generated tests to be output. Be sure to run with `-E` to generate error revealing (instead of regression) tests. This will run for one minute (-b 60).
+
+The source files of the generated test suite are compressed into an archive with the following name: `project_id-version_id-generator.test_id.tar.bz2`.  You can uncompress it by running `tar -xvjf <FILENAME>`.
+
+Open the tests in a test editor of your choice. Are you surprised by what you see? Consider how these tests compare to the manually written test you inspected in the previous step. 
+
+**Evaluation**
+1. How many tests did Randoop generate? 
+2. Did any of the generated tests trigger the bug? A bug triggering test should fail on the buggy version and pass on the fixed version. 
+
+You can answer this by runing the `defects4j test` command:
+`defects4j test -w <PATH_TO_CHECKEDOUT_PROJECT> -s <PATH_TO_tar.bz2_FILE>`
+
+Were you surprised by this? Think of what kinds of bugs randoop is capable of finding using its set of contracts.
+
+3. What was the coverage of the generated test suite on the class under test? You can answer this by running `defects4j coverage` command:
+`defects4j coverage -w <PATH_TO_CHECKEDOUT_PROJECT> -s <PATH_TO_tar.bz2_FILE>` Report both line and condition (branch) coverage.
+
+## Submission
+Submit a document answering the following questions to Gradescope:
+1. Part 1: Description of each bug. Does the trigger test expose a safety or functional property violation?
+2. Part 2: Randoop Results. 
+3. Discuss differences between the Randoop generated tests and the developer written test. 
+
+Remember to clearly indicate if you worked with a partner on this assignment. 
