@@ -65,7 +65,7 @@ First, read the Abstract, Introduction, and Section 3 of the [Defects4j publicat
 In this lab you will study bugs in the [Chart](https://www.jfree.org/jfreechart/) project. The Chart project is a Java chart library for programatically creating professional quality charts. Explore [this page](https://www.jfree.org/jfreechart/samples.html) for some examples.
 
 You will repeat the below steps 1-3 for each bug in the following list:
-Chart 1, Chart 11, and Chart 15.
+Chart 1, Chart 11, and Chart 17.
 
 ## Part 1: Checking out your bug
 
@@ -118,7 +118,7 @@ Open the tests in a test editor of your choice. Are you surprised by what you se
 2. Did any of the generated tests trigger the bug? A bug triggering test should fail on the buggy version and pass on the fixed version. 
     You can answer this by runing the `defects4j test` command:
     `defects4j test -w <PATH_TO_CHECKEDOUT_PROJECT> -s <PATH_TO_tar.bz2_FILE>`
-    Were you surprised by this? Think of what kinds of bugs randoop is capable of finding using its set of contracts.
+    Do this on both the buggy and fixed versions. Note that the results execute the tests twice (you'll see a number much larger than the total number of tests generated) so you should divide the number of failed tests by two. You'll need to checkout the fixed version as well. Were you surprised by the results? Think of what kinds of bugs randoop is capable of finding using its set of contracts.
 
 3. What was the coverage of the generated test suite on the class under test? You can answer this by running `defects4j coverage` command:
 `defects4j coverage -w <PATH_TO_CHECKEDOUT_PROJECT> -s <PATH_TO_tar.bz2_FILE>` Report both line and condition (branch) coverage.
