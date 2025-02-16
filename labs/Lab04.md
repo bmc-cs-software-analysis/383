@@ -106,7 +106,7 @@ In this part you will use Randoop to generate tests for each class containing a 
 
 Generate tests using the following command:  
 `gen_tests.pl -g randoop -p Chart -v <BUGNUM>b -n 1 -o lab4/ -b 60 -E`
-Replace "<BUGNUM>" with the bug number you are targetting. 
+Replace "\<BUGNUM\>" with the bug number you are targetting. 
 You can replace `lab4/` with wherever you would like the generated tests to be output. Be sure to run with `-E` to generate error revealing (instead of regression) tests. This will run for one minute (-b 60).
 
 The source files of the generated test suite are compressed into an archive with the following name: `project_id-version_id-generator.test_id.tar.bz2`.  You can uncompress it by running `tar -xvjf <FILENAME>`.
