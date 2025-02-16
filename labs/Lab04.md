@@ -116,11 +116,9 @@ Open the tests in a test editor of your choice. Are you surprised by what you se
 **Evaluation**
 1. How many tests did Randoop generate? 
 2. Did any of the generated tests trigger the bug? A bug triggering test should fail on the buggy version and pass on the fixed version. 
-
-You can answer this by runing the `defects4j test` command:
-`defects4j test -w <PATH_TO_CHECKEDOUT_PROJECT> -s <PATH_TO_tar.bz2_FILE>`
-
-Were you surprised by this? Think of what kinds of bugs randoop is capable of finding using its set of contracts.
+    You can answer this by runing the `defects4j test` command:
+    `defects4j test -w <PATH_TO_CHECKEDOUT_PROJECT> -s <PATH_TO_tar.bz2_FILE>`
+    Were you surprised by this? Think of what kinds of bugs randoop is capable of finding using its set of contracts.
 
 3. What was the coverage of the generated test suite on the class under test? You can answer this by running `defects4j coverage` command:
 `defects4j coverage -w <PATH_TO_CHECKEDOUT_PROJECT> -s <PATH_TO_tar.bz2_FILE>` Report both line and condition (branch) coverage.
@@ -128,7 +126,7 @@ Were you surprised by this? Think of what kinds of bugs randoop is capable of fi
 ## Submission
 Submit a document answering the following questions to Gradescope:
 1. Part 1: Description of each bug. Does the trigger test expose a safety or functional property violation?
-2. Part 2: Randoop Results. 
+2. Part 2: Randoop Results for each bug. Include the number of tests generated, if any trigger the bug, and the line and branch coverage.
 3. Discuss differences between the Randoop generated tests and the developer written test. 
 
 Remember to clearly indicate if you worked with a partner on this assignment. 
