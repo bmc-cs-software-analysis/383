@@ -113,7 +113,7 @@
       assignments: 
         - 
           title: "Lab 4 - Randoop and Defects4j"
-          #url: "labs/Lab04.html"
+          url: "labs/Lab04.html"
         -
           deadline: 2025-02-22
           title: "HW02 - Assertion Inference"
