@@ -4,7 +4,7 @@ import java.util.*;
 public class Jaccard {
 
     //TODO: put the targt test prefix here
-    String TARGET_PREFIX = "";
+    public static final String TARGET_PREFIX = "";
 
     public static Set<String> getWords(String line) {
         return new HashSet<>(Arrays.asList(line.split("\\s+"))); 
@@ -31,12 +31,12 @@ public class Jaccard {
             //TODO: create a data structure to store a set of words and its corresponding asertion. 
         }
 
-        String retrievedAsesrtion = "";
+        String retrievedAssertion = "";
         double bestSimilarity = 0;
 
         //TODO: Find the most similar document 
         for (/*each corpusAssertion,corpusTest in the corpus*/) {
-            double similarity = Jaccard.jaccard(TARGET_PREFIX, corpusTest);
+            double similarity = Jaccard.jaccard(Jaccard.getWords(TARGET_PREFIX), corpusTest);
             
             if (similarity > bestSimilarity) {
                 retrievedAssertion = corpusAssertion;
