@@ -128,6 +128,7 @@ Open the tests in a test editor of your choice. Are you surprised by what you se
 
 ## Submission
 Submit a document answering the following questions to Gradescope:
+0. Part 0: Your fixed Line.java and Point.java
 1. Part 1: Description of your bug. Does the trigger test expose a safety or functional property violation?
 2. Part 2: Randoop Results for your bug. Include the number of tests generated, if any trigger the bug, and the line and branch coverage.
 3. Discuss differences between the Randoop generated tests and the developer written test. 
