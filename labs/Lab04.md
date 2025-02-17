@@ -52,22 +52,25 @@ This lab is optionally a partner assignment. Make sure your document specifies i
 
 ## Objectives:
 
-In this lab, you will explore randomized test generation using Randoop and evaluate the resulting test suites across several dimensions. You will consider the strengths and weaknesses by running them on real-world bugs using the Defects4j benchmark.
+In this lab, you will explore randomized test generation using Randoop and evaluate the resulting test suites across several dimensions. You will consider the strengths and weaknesses by running it on a real-world bug using the Defects4j benchmark.
 
 1. Run the randomized testing tool Randoop 
 2. Observe its outputs on the Defects4J benchmark
 
-First, read the Abstract, Introduction, and Section 3 of the [Defects4j publication](https://homes.cs.washington.edu/~mernst/pubs/bug-database-issta2014.pdf).Since the paper was published in 2014, the authors have extended the benchmark to 854 bugs from additional projects.
+## Part 0: Background
+
+First follow this [Randoop tutorial](https://elizabethdinella.github.io/blog-posts/randoop/) to run Randoop on a small example. 
+
+In this lab you'll be running Randoop on a real world bug from the Defects4j benchmark. Read the Abstract, Introduction, and Section 3 of the [Defects4j publication](https://homes.cs.washington.edu/~mernst/pubs/bug-database-issta2014.pdf). Since the paper was published in 2014, the authors have extended the benchmark to 854 bugs from additional projects.
 
 ## Setup
 1. [Defects4J](https://github.com/rjust/defects4j) - Defects4j should already be installed in goldengate. If you would like to run this locally, follow the installation instructions in the README. 
 
 In this lab you will study bugs in the [Chart](https://www.jfree.org/jfreechart/) project. The Chart project is a Java chart library for programatically creating professional quality charts. Explore [this page](https://www.jfree.org/jfreechart/samples.html) for some examples.
 
-You will repeat the below steps 1-3 for each bug in the following list:
-Chart 1, Chart 11, and Chart 17.
-
 ## Part 1: Checking out your bug
+
+For this lab you will be working with **Chart 1**.
 
 **Resources**
 - [d4j checkout documentation](http://defects4j.org/html_doc/d4j/d4j-checkout.html)
@@ -91,7 +94,7 @@ The output will include details about the "triggering" test. Go to the developer
 
 
 2. **Read and Analyze the Test**
-    Carefully read the test case the developer wrote for the bug fix. Try to understand what the bug was and how the test ensures the bug is fixed. For each bug, describe the bug in a few sentences. Include whether the triggering test expose a safety or functional property violation?
+    Carefully read the test case the developer wrote for the bug fix. Try to understand what the bug was and how the test ensures the bug is fixed. Describe the bug in a few sentences. Include whether the triggering test expose a safety or functional property violation?
 
 By understanding the developer's test, you will get insight into what an ideal automated test generation tool should catch. This analysis will serve as a basis for evaluating the automated tests you will generate in the next steps.
 
@@ -125,8 +128,8 @@ Open the tests in a test editor of your choice. Are you surprised by what you se
 
 ## Submission
 Submit a document answering the following questions to Gradescope:
-1. Part 1: Description of each bug. Does the trigger test expose a safety or functional property violation?
-2. Part 2: Randoop Results for each bug. Include the number of tests generated, if any trigger the bug, and the line and branch coverage.
+1. Part 1: Description of your bug. Does the trigger test expose a safety or functional property violation?
+2. Part 2: Randoop Results for your bug. Include the number of tests generated, if any trigger the bug, and the line and branch coverage.
 3. Discuss differences between the Randoop generated tests and the developer written test. 
 
 Remember to clearly indicate if you worked with a partner on this assignment. 
