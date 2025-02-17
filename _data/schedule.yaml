@@ -129,12 +129,12 @@
         #-
         #    title: "Chapter 6.2-6.3"
       recording: ~
-      assignments: 
-        -
-          #deadline: 2025-02-22
-          title: "Project 1 - Bug Case Study"
-          #title: "HW03 -  Specifications"
-          #url: "hws/HW03.html"
+      #assignments: 
+      #  -
+      #deadline: 2025-02-22
+      #title: "Project 1 - Bug Case Study"
+      #title: "HW03 -  Specifications"
+      #url: "hws/HW03.html"
 
     -
       date: 2025-02-24
@@ -146,7 +146,7 @@
       #recording: ~
       assignments: 
         - 
-          title: "Lab 5 - Project Check in"
+          title: "Lab 5 - Evosuite"
           #url: "labs/Lab05.html"
     -
       date: 2025-02-26
@@ -158,14 +158,14 @@
       #recording: ~
     - 
       date: 2025-03-03
-      title: Lecture 12 <br> SBST <br> Randoop
+      title: Lecture 12 <br> Fuzzing <br> AFL
       #slides: "slides/lecture11.pdf"
       #readings:
       #  -
       #    title: "Chapter 8"
       assignments: 
         - 
-          title: "Lab 6 - Project Presentations"
+          title: "Lab 6 - AFL"
           #    url: "labs/Lab06.html"
           #    deadline: 2025-02-29
           #  - 
@@ -174,7 +174,7 @@
           #_url: "labs/Lab00.html"
     - 
       date: 2025-03-05
-      title: Lecture 13 <br> SBST <br> AFL
+      title: Lecture 13 <br> Fuzzing <br> AFL
       readings:
         -
           title: "Leveling up Fuzzing: Finding more Vulnerabilities with AI"
