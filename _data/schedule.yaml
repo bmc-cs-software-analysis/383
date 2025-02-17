@@ -115,15 +115,17 @@
           title: "Lab 4 - Randoop and Defects4j"
           url: "labs/Lab04.html"
           deadline: 2025-02-23
-        
-        
     - 
       date: 2025-02-19
       title: Lecture 9 <br> Genetic Algorithms 
       #slides: "slides/lecture08.pdf"
       readings:
-        #-
-        #    title: "Chapter 6.2-6.3"
+        -
+            title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
+            url: "https://arxiv.org/pdf/2201.11903"
+        -
+            title: "A Systematic Survey of Prompt Engineering in Large Language Models: Techniques and Applications"
+            url: "https://arxiv.org/pdf/2402.07927"
       recording: ~
       assignments: 
         -
