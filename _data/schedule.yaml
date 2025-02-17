@@ -115,11 +115,7 @@
           title: "Lab 4 - Randoop and Defects4j"
           url: "labs/Lab04.html"
           deadline: 2025-02-24
-        -
-          deadline: 2025-02-22
-          title: "HW02 - Assertion Inference"
-          #url: "hws/HW03.html"
-
+        
         
     - 
       date: 2025-02-19
@@ -129,8 +125,12 @@
         #-
         #    title: "Chapter 6.2-6.3"
       recording: ~
-      #assignments: 
-      #  -
+      assignments: 
+        -
+          deadline: 2025-03-05
+          title: "HW02 - Assertion Inference"
+          #url: "hws/HW03.html"
+
       #deadline: 2025-02-22
       #title: "Project 1 - Bug Case Study"
       #title: "HW03 -  Specifications"
