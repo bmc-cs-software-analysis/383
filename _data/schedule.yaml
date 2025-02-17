@@ -105,7 +105,7 @@
     -
       date: 2025-02-17
       title: Lecture 8 <br> Randomized Testing <br> Defects4j
-      #slides: "slides/lecture07.pdf"
+      slides: "slides/lecture08.pdf"
       readings:
         - 
           title: "Feedback-directed Random Test Generation"
