@@ -118,7 +118,7 @@
     - 
       date: 2025-02-19
       title: Lecture 9 <br> Genetic Algorithms 
-      #slides: "slides/lecture08.pdf"
+      slides: "slides/lecture09.pdf"
       readings:
         -
             title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"
