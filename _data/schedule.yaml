@@ -149,7 +149,7 @@
       assignments: 
         - 
           title: "Lab 5 - Evosuite"
-          #url: "labs/Lab05.html"
+          url: "labs/Lab05.html"
     -
       date: 2025-02-26
       title: Lecture 11 <br> SBST <br> CodaMosa 
