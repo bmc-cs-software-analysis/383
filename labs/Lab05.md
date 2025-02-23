@@ -58,7 +58,55 @@ In this lab, you will explore Search Based Test Generation with Genetic Algorith
 
 ## Part 1 - EvoSuite on a small example
 
-Plot coverage?
+In this part, you will run EvoSuite to generate regression tests on a `BankAccount` class. 
+
+**Setup**  
+First, download the necessary files using:
+`wget https://bmc-cs-software-analysis.github.io/383/labs/lab05/<FILENAME>` for the following files:
+- `evosuite-383.jar`
+- `BankAccount.java`
+- `run.sh`
+
+Open `BankAccount.java`  and inspect its behavior. This bank account starts locked and cannot perform and deposits or withdrawls until it is unlocked with an admin key. The admin key (1999) is encoded in hex and a decode method is used to convert it before comparing to the input pin.
+
+The class contains two bugs. Inspect them and consider how you would trigger them by manually writing a test case. 
+
+Once you've understood how you could trigger these bugs manually, let's run EvoSuite and study the quality of the generated test suite.
+
+Run evosuite using the `run.sh` script I included. This should execute for 5 minutes and print a lot of output... If you're having problems running on goldengate for the entire duration, try running it locally.
+
+When the script completes you should see something like this:
+
+```
+* Search finished after XXs and XXX generations, XXXX statements, best individual has fitness: XXX
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: X%
+* Total number of goals: X
+* Number of covered goals: X
+* Generated X tests with total length X 
+* Resulting test suite's coverage: X%
+* Generating assertions
+* Resulting test suite's mutation score: X%
+* Writing tests to file
+* Writing JUnit test case 'BankAccount_ESTest' to out/
+* Done!
+
+* Computation finished
+```
+
+The tests will be located in `out/BankAccount_ESTest.java`. Answer the following questions using the script's output and content in the generated test suite:
+
+1. How many tests did EvoSuite generate?
+2. What was the branch coverage of the generated test suite? If it was not 100%, what branches did it miss? Explain why it missed those branches.
+3. Did EvoSuite find either of the bugs? If not, explain if this was an issue with the prefix, assertion, or both.
+
+Now, we ran EvoSuite for quite a long time (5min). Let's inspect its incremental improvement over that time period by inspecting the logs in `evosuite-report/statistics.csv`. It includes 
+
+plot the coverage. 
+
+SHOULD BE A PLEATUE
 
 ## Part 2 - EvoSuite on Defects4J 
 
@@ -89,11 +137,10 @@ Answer the same questions from Lab4:
 ## Submission 
 Submit a document answering the following questions to Gradescope:
 
-1. Part 1: Your fixed <FILES>  and the coverage plot.
+1. Part 1: Answer to the two questions and the coverage plot.
 3. Part 2: EvoSuite Results for your bug. Include the number of tests generated, if any trigger the bug, and the line and branch coverage.
 4. Discuss differences between the EvoSuite generated tests and the developer written test.
 5. Discuss differences between the EvoSuite and Randoop generated tests from Lab 4.
 
 Remember to clearly indicate if you worked with a partner on this assignment.
-
 
