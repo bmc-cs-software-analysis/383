@@ -73,7 +73,7 @@ The class contains two bugs. Inspect them and consider how you would trigger the
 
 Once you've understood how you could trigger these bugs manually, let's run EvoSuite and study the quality of the generated test suite.
 
-Run evosuite using the `run.sh` script I included. This should execute for 5 minutes and print a lot of output... If you're having problems running on goldengate for the entire duration, try running it locally.
+Run evosuite using the `run.sh` script I included. This should execute for 10 minutes and print a lot of output... If you're having problems running on goldengate for the entire duration, try running it locally.
 
 When the script completes you should see something like this:
 
@@ -102,11 +102,7 @@ The tests will be located in `out/BankAccount_ESTest.java`. Answer the following
 2. What was the branch coverage of the generated test suite? If it was not 100%, what branches did it miss? Explain why it missed those branches.
 3. Did EvoSuite find either of the bugs? If not, explain if this was an issue with the prefix, assertion, or both.
 
-Now, we ran EvoSuite for quite a long time (5min). Let's inspect its incremental improvement over that time period by inspecting the logs in `evosuite-report/statistics.csv`. It includes 
-
-plot the coverage. 
-
-SHOULD BE A PLEATUE
+Now, we ran EvoSuite for quite a long time (10min). Let's inspect its incremental improvement over that time period by inspecting the logs in `evosuite-report/statistics.csv`. It includes the coverage for each time interval of 60 seconds. If you were to plot these values with an x axis from 0 to 10minutes and the y axis representing branch coverage, what would it look like? Submit this plot with your report. 
 
 ## Part 2 - EvoSuite on Defects4J 
 
