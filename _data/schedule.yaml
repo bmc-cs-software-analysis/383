@@ -142,9 +142,10 @@
       date: 2025-02-24
       title: Lecture 10 <br> SBST <br> EvoSuite
       #slides: "slides/lecture09.pdf"
-      #readings:
-      #  -
-      #    title: "Chapter 7"
+      readings:
+        -
+          title: "An approximate implementation of constant time rank selection"
+          url: "https://github.com/bmc-cs-software-analysis/lecture-code/blob/main/lec10/RankSelection.java" 
       #recording: ~
       assignments: 
         - 
