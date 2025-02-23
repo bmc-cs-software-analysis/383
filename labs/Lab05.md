@@ -61,7 +61,30 @@ In this lab, you will explore Search Based Test Generation with Genetic Algorith
 Plot coverage?
 
 ## Part 2 - EvoSuite on Defects4J 
-Chart 1?
+
+In this part you will use EvoSuite to generate tests from the real world bug you studied in the last lab.
+
+**Resources**
+- [d4j gen_tests command](http://defects4j.org/html_doc/gen_tests.html)
+- [d4j test command](http://defects4j.org/html_doc/d4j/d4j-test.html)
+- [d4j coverage command](http://defects4j.org/html_doc/d4j/d4j-coverage.html)
+- [d4j dissection](https://program-repair.org/defects4j-dissection/#!/)
+
+First, refresh your memory of `Chart 1` by taking a look at the patch and trigger test. You should use the Defects4j Dissection site and your checked out version of `Chart 1` for reference.
+
+Run the `gen_tests` command using the following parameters for evosuite:
+`gen_tests.pl -g evosuite -p Chart -v <BUGNUM>b -n 1 -o lab5/ -b 60`  
+
+As in the previous lab, the source files of the generated test suite are compressed into an archive with the following name: `project_id-version_id-generator.test_id.tar.bz2`. You can uncompress it by running `tar -xvjf <FILENAME>.`
+
+**Evaluation**
+Answer the same questions from Lab4:
+1. How many tests did EvoSuite generate? 
+2. Did any of the generated tests trigger the bug? A bug triggering test should fail on the buggy version and pass on the fixed version. 
+    You can answer this by runing the `defects4j test` command:
+    `defects4j test -w <PATH_TO_CHECKEDOUT_PROJECT> -s <PATH_TO_tar.bz2_FILE>`
+3. What was the coverage of the generated test suite on the class under test? You can answer this by running `defects4j coverage` command:
+`defects4j coverage -w <PATH_TO_CHECKEDOUT_PROJECT> -s <PATH_TO_tar.bz2_FILE>` Report both line and condition (branch) coverage.
 
 ## Submission 
 Submit a document answering the following questions to Gradescope:
