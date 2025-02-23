@@ -133,7 +133,7 @@ Answer the same questions from Lab4:
 ## Submission 
 Submit a document answering the following questions to Gradescope:
 
-1. Part 1: Answer to the two questions and the coverage plot.
+1. Part 1: Answer to the three questions and the coverage plot.
 3. Part 2: EvoSuite Results for your bug. Include the number of tests generated, if any trigger the bug, and the line and branch coverage.
 4. Discuss differences between the EvoSuite generated tests and the developer written test.
 5. Discuss differences between the EvoSuite and Randoop generated tests from Lab 4.
