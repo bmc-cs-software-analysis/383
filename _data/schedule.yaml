@@ -146,6 +146,9 @@
         -
           title: "An approximate implementation of constant time rank selection"
           url: "https://github.com/bmc-cs-software-analysis/lecture-code/blob/main/lec10/RankSelection.java" 
+        -
+          title: "Handout"
+          url: "GA_Handout.pdf"
       #recording: ~
       assignments: 
         - 
