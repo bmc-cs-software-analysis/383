@@ -141,7 +141,7 @@
     -
       date: 2025-02-24
       title: Lecture 10 <br> SBST <br> EvoSuite
-      #slides: "slides/lecture09.pdf"
+      slides: "slides/lecture10.pdf"
       readings:
         -
           title: "An approximate implementation of constant time rank selection"
