@@ -56,6 +56,14 @@ This lab is optionally a partner assignment. Make sure your document specifies i
 
 In this lab, you will explore Search Based Test Generation with Genetic Algorithms using EvoSuite. Similar to Lab4, you will run EvoSuite on a real-world bug in the Defects4j benchmark.
 
+## Part 0 - Make sure you have the correct java version!
+On goldengate, running EvoSuite may result in an error if you are not using the correct version of java. To switch java versions locally, download and install sdkman: `curl -s "https://get.sdkman.io" | bash`
+Next run
+1. `source "~/.sdkman/bin/sdkman-init.sh"`  
+2. `sdk install java 11.0.11-open`  
+3. `sdk use java 11.0.11-open`  
+4. verify the java version is switched by running `java --version`
+
 ## Part 1 - EvoSuite on a small example
 
 In this part, you will run EvoSuite to generate regression tests on a `BankAccount` class. 
