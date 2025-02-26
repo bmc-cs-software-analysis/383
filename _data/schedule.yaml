@@ -157,7 +157,7 @@
     -
       date: 2025-02-26
       title: Lecture 11 <br> SBST <br> CodaMosa 
-      #slides: "slides/lecture10.pdf"
+      slides: "slides/lecture11.pdf"
       readings:
         -
           title: "CodaMOSA: Escaping Coverage Plateaus in Test Generation with Pre-trained LLMs"
