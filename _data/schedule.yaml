@@ -173,7 +173,7 @@
       #    title: "Chapter 8"
       assignments: 
         - 
-          title: "Lab 6 - AFL"
+          #title: "Lab 6 - AFL"
           #    url: "labs/Lab06.html"
           #    deadline: 2025-02-29
         - 
