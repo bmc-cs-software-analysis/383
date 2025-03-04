@@ -24,7 +24,12 @@ In this part of the assignment, you will use AFL++ to fuzz C programs.
 First, to gain familiarity, take a look at each of the sample programs.
 
 Download the files with 
-`wget https://bmc-cs-software-analysis.github.io/383/activities/test/sanity1.c`
+`wget https://bmc-cs-software-analysis.github.io/383/activities/sanity1.c`
+`wget https://bmc-cs-software-analysis.github.io/383/activities/easy1.c`
+`wget https://bmc-cs-software-analysis.github.io/383/activities/easy2.c`
+`wget https://bmc-cs-software-analysis.github.io/383/activities/path1.c`
+`wget https://bmc-cs-software-analysis.github.io/383/activities/path2.c`
+`wget https://bmc-cs-software-analysis.github.io/383/activities/path3.c`
 
 Let's start with the simplest program: `sanity1.c`
 
@@ -46,31 +51,12 @@ and running it `./sanity1 <YOUR STD IN INPUT>`
 
 Inspect the rest of the target files. Try to come up with a crashing input and run them and inspect the coverage. 
 
-Record the crashing inputs you manually derived, and report them in your `README.txt`.
-
-> TODO FIX PATH{1,2,3} FILES so they don't have to come up with an input that's 140 length
-
-
-The target programs `easy{n}.c`, and `path{n}.c`, are sample programs contrived for this assignment. We've also included `CVE-{year}-{n}.c` files. A CVE, or Common Vulnerabilities and Exposures, identifier is a unique reference number given to a publicly known cybersecurity vulnerability. The CVE identifier follows a specific format: **CVE-[Year]-[Number]**.
-
-- **Year**: This part of the identifier indicates the year the vulnerability was discovered or made public. It reflects when the CVE ID was assigned, not necessarily when the vulnerability was found.
-  
-- **Number**: This is a sequential number assigned to the vulnerability within that year. The number typically starts from 1 and goes upwards as new vulnerabilities are identified throughout the year.
-
-For example, in the identifier **CVE-2024-12345**:
-- "2024" is the year the CVE was assigned.
-- "12345" is the unique number of that vulnerability for the year 2024.
-
-This system helps track and reference specific vulnerabilities in a standardized way. 
-
-The CVE programs you will test are minimal code semgents inspired by the denotated real world vulnerability.
-
-Now that you're familiar with the target programs and their bugs, let's use AFL to fuzz them. 
-
+Record the crashing inputs you manually derived, and save them. You will submit them as part of Lab 6. 
 
 Setup steps: [@eliz TODO: ask David to install on goldengate] https://github.com/AFLplusplus/AFLplusplus/blob/stable/docs/INSTALL.md
 
 Record the time taken to find each bug.... 
 
-Also record the crashing input. Is it different than the one you derived manually? Record your results in the README.
+
+Also record the crashing input. Is it different than the one you derived manually? Record your results and save them. You will also submit these as part of Lab 6. 
 
