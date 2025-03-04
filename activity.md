@@ -1,57 +1,14 @@
 ---
 layout: default
 title: Fuzzing
-type: Homework
+type: In Class Activity
 number: 02
 release_date: 2025-03-04
 ---
 
-<!-- Check whether the assignment is ready to release -->
-{% capture today %}{{'now' | date: '%s'}}{% endcapture %}
-{% capture release_date %}{{page.release_date | date: '%s'}}{% endcapture %}
-{% if release_date > today %} 
-<div class="alert alert-danger">
-Warning: this assignment is out of date.  It may still need to be updated for this year's class.  Check with your instructor before you start working on this assignment.
-</div>
-{% endif %}
-<!-- End of check whether the assignment is up to date -->
-
-
-<!-- Check whether the assignment is up to date -->
-{% capture this_year %}{{'now' | date: '%Y'}}{% endcapture %}
-{% capture due_year %}{{page.due_date | date: '%Y'}}{% endcapture %}
-{% if this_year != due_year %} 
-<div class="alert alert-danger">
-Warning: this assignment is out of date.  It may still need to be updated for this year's class.  Check with your instructor before you start working on this assignment.
-</div>
-{% endif %}
-<!-- End of check whether the assignment is up to date -->
-
-
-
-{% if page.materials %}
-<div class="alert alert-info">
-You can download the materials for this assignment here:
-<ul>
-{% for item in page.materials %}
-<li><a href="{{item.url}}">{{ item.name }}</a></li>
-{% endfor %}
-</ul>
-
-
-<i>Remember to make a copy of the notebook into your own Drive by choosing “Save a Copy in Drive” from Colab’s “File” menu.</i>
-
-</div>
-{% endif %}
-
-
-
-
-
 {{page.type}} {{page.number}}: {{page.title}}
 =============================================================
 
-_Due: {{page.due_date}}_
 
 ## Overview
 
