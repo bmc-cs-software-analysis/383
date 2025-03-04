@@ -17,19 +17,25 @@ In this activity, you'll explore randomized testing for C programs.
 ## Resources
 1. [AFL++](https://aflplus.plus/)
 
-## PART 1: Fuzzing with AFL
-
-In this part of the assignment, you will use AFL++ to fuzz C programs. 
-
-First, to gain familiarity, take a look at each of the sample programs.
-
-Download the files with 
+## Setup
+0. Download the target files with 
 `wget https://bmc-cs-software-analysis.github.io/383/activities/sanity1.c`
 `wget https://bmc-cs-software-analysis.github.io/383/activities/easy1.c`
 `wget https://bmc-cs-software-analysis.github.io/383/activities/easy2.c`
 `wget https://bmc-cs-software-analysis.github.io/383/activities/path1.c`
 `wget https://bmc-cs-software-analysis.github.io/383/activities/path2.c`
 `wget https://bmc-cs-software-analysis.github.io/383/activities/path3.c`
+1. Install docker 
+2. `sudo docker pull aflplusplus/aflplusplus:latest`
+3. `sudo docker run -ti -v FULL_PATH_TO_THIS_ACTIVITY:/src aflplusplus/aflplusplus`
+
+If you run `ls /src/` you should see the downloaded files.
+
+## PART 1: Manually Crash the Programs
+
+In this part of the assignment, you will use AFL++ to fuzz C programs. 
+
+First, to gain familiarity, take a look at each of the sample programs.
 
 Let's start with the simplest program: `sanity1.c`
 
@@ -52,6 +58,9 @@ and running it `./sanity1 <YOUR STD IN INPUT>`
 Inspect the rest of the target files. Try to come up with a crashing input and run them and inspect the coverage. 
 
 Record the crashing inputs you manually derived, and save them. You will submit them as part of Lab 6. 
+
+
+## Part 2: Crash the Programs with AFL
 
 Setup steps: [@eliz TODO: ask David to install on goldengate] https://github.com/AFLplusplus/AFLplusplus/blob/stable/docs/INSTALL.md
 
