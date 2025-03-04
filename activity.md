@@ -19,9 +19,12 @@ In this activity, you'll explore randomized testing for C programs.
 
 ## PART 1: Fuzzing with AFL
 
-In this part of the assignment, you will use AFL++ to fuzz C programs. For parts one and two, you will be testing the target C programs in the `hw04/c_targets/` directory. 
+In this part of the assignment, you will use AFL++ to fuzz C programs. 
 
 First, to gain familiarity, take a look at each of the sample programs.
+
+Download the files with 
+`wget https://bmc-cs-software-analysis.github.io/383/activities/test/sanity1.c`
 
 Let's start with the simplest program: `sanity1.c`
 
@@ -38,9 +41,8 @@ int main() {
 
 This program will crash with a divide-by-zero error regardless of what is supplied in stdin.
 
-Try it out by running `./sanity1 <YOUR STD IN INPUT>` 
-
-You should see a crash. Furthermore, when you run `ls` you should now see a `sanity1.cov` file. Code coverage is a measure of how much of a program’s code is executed in a particular run. There are a number of different criterias to describe coverage. In this assignment we are providing line and column coverage. You may notice that some locations are printed more than once. This is because coverage is calculated at the *instruction level*. For more information on instructions and how coverage is calculated, you can read this [LLVM primer](https://drive.google.com/file/d/1Vwdan96-bGiGsww4HYnqhW_fXycaOkvN/view). 
+Try it out by compiling `g++ sanity1.c -o sanity1.out`
+and running it `./sanity1 <YOUR STD IN INPUT>` 
 
 Inspect the rest of the target files. Try to come up with a crashing input and run them and inspect the coverage. 
 
