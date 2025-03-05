@@ -188,11 +188,12 @@
           title: "Leveling up Fuzzing: Finding more Vulnerabilities with AI"
           url: "https://security.googleblog.com/2024/11/leveling-up-fuzzing-finding-more.html"
         - 
-          title: "Activity"
-          url: "activity.html"
-        - 
           title: "AFL Historical Notes"
           url: "https://lcamtuf.coredump.cx/afl/historical_notes.txt"
+      assignments:
+        -
+          title: "AFL Activity"
+          url: "activity.html"
       #slides: "slides/lecture12.pdf"
       recording: ~
     - 
