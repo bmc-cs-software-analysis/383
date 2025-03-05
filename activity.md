@@ -66,11 +66,8 @@ Compile your program with the AFL version of c. This will instrument your progra
 
 AFL++ requires a seed program. For now, create a directory `seed` and with a file `iput1.txt` that contains the text "test".
 
-Run AFL with: `/AFLplusplus/afl-fuzz  -i seeds/ -o out/ -- /src/easy1 @@`
+Run AFL with: `/AFLplusplus/afl-fuzz  -i seeds/ -o out/ -- /src/easy1`
 
-Record the time taken to find each bug.... 
+Monitor the output and record the time taken to find each crash. The crashing input will be located in `out/default/crashes`. Record this. Is it different than the one you derived manually? Record your results and save them. You will also submit these as part of Lab 6. 
 
-The crashing input will be located in `out/crashes`
-
-Also record the crashing input. Is it different than the one you derived manually? Record your results and save them. You will also submit these as part of Lab 6. 
-
+Do this for each of the target programs you downloaded.
