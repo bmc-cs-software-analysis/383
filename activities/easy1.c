@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main() {
     char input[65536];
@@ -9,6 +10,7 @@ int main() {
     int z;
     if (strlen(input) % 7 == 0) {
         z = y / x;
+        abort();
     }
 
     if (strlen(input) % 13 == 0) {

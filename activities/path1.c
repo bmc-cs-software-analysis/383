@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main() {
     char input[65536];
@@ -18,6 +19,7 @@ int main() {
                                     if (strchr(input, 'I')) {
                                         if (strchr(input, 'J')) {
                                             z = y / x;  
+                                            abort();
                                         }
                                     }
                                 }

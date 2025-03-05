@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main() {
   char input[65536];
@@ -31,6 +32,7 @@ int main() {
                                               input[25] == 'b' ||
                                               input[25] == 'c') {
                                             z = y / x;
+                                            abort();
                                           }
                                         }
                                       }

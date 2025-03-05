@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main() {
   int x, y, z;
@@ -28,7 +29,9 @@ int main() {
                       if (strlen(buf2) > 100)
                         if (strlen(buf2) > 120)
                           b = 1;
-  if (b)
+  if (b) {
     printf("%d\n", r / a);
+    abort();
+  }
   return 0;
 }
