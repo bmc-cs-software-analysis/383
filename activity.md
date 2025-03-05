@@ -62,10 +62,15 @@ Record the crashing inputs you manually derived, and save them. You will submit 
 
 ## Part 2: Crash the Programs with AFL
 
-Setup steps: [@eliz TODO: ask David to install on goldengate] https://github.com/AFLplusplus/AFLplusplus/blob/stable/docs/INSTALL.md
+Compile your program with the AFL version of c. This will instrument your program to log coverage: `/AFLplusplus/afl-clang-fast -o easy1 easy1.c`
+
+AFL++ requires a seed program. For now, create a directory `seed` and with a file `iput1.txt` that contains the text "test".
+
+Run AFL with: `/AFLplusplus/afl-fuzz  -i seeds/ -o out/ -- /src/easy1 @@`
 
 Record the time taken to find each bug.... 
 
+The crashing input will be located in `out/crashes`
 
 Also record the crashing input. Is it different than the one you derived manually? Record your results and save them. You will also submit these as part of Lab 6. 
 
