@@ -194,7 +194,7 @@
         -
           title: "AFL Activity"
           url: "activity.html"
-      #slides: "slides/lecture12.pdf"
+      slides: "slides/lecture12.pdf"
       recording: ~
     - 
       date: 2025-03-10
