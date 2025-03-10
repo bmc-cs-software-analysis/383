@@ -81,9 +81,9 @@ In this project, you will....
 
 Each group will be assigned a project from Defects4j and range of bugs.
 
-## Part A: Inspection of each sample and run state of the art
+## Part A: Inspection of each sample 
 
-Relevant instructions are included in Lab 5. 
+For each bug, inspect the bug and the developer written trigger test. Relevant instructions are included in Labs 4 and 5. 
 
 ## Part B: Prefix Generation
 
@@ -104,3 +104,11 @@ https://github.com/Lhy-apple/editas2
 ## Part D: Report
 Compile all of your results into a [latex document](https://www.overleaf.com/read/skgqsjtdprhz#2b546f) with your group. 
 
+
+# Part 2: Due April 7th
+
+In this part, you will use your report to propose an improvement to either EvoSuite or the Assertion Generation. Your proposal should directly make use of your error analysis. 
+
+# Part 3: Instructions TBD! 
+
+In this part you will implement your proposed improvement and discuss results.
