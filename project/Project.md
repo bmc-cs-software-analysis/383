@@ -107,8 +107,8 @@ Compile all of your results into a [latex document](https://www.overleaf.com/rea
 
 # Part 2: Due April 7th
 
-In this part, you will use your report to propose an improvement to either EvoSuite or the Assertion Generation. Your proposal should directly make use of your error analysis. 
+In this part, you will use your report to propose an improvement to either EvoSuite or the Assertion Generation. Your proposal should directly make use of your error analysis. More instructions coming!
 
-# Part 3: Instructions TBD! 
+# Part 3: Due April 30th
 
-In this part you will implement your proposed improvement and discuss results.
+In this part you will implement your proposed improvement and discuss results. More instructions coming!
