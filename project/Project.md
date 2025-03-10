@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Automated Testing"
+title: "Automated Bug Finding: Enhancing Test Generation for Real-World Java Bugs"
 type: Project
 number: 00
 active_tab: project
@@ -45,7 +45,7 @@ You can download the materials for this assignment here:
 
 
 
-{{page.type}} {{page.number}}: {{page.title}}
+{{page.type}}: {{page.title}}
 =============================================================
 
 Automated testing aims to generate tests which find bugs, prevent regressions and provide documentation. In this project, we will target bug finding as a use case for test generation.
