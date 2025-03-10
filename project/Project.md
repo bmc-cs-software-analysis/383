@@ -77,31 +77,31 @@ In this project, you will....
 
 # Part 1: Due March 31st
 
-## Bug Assignments:
+### Bug Assignments:
 
 Each group will be assigned a project from Defects4j and range of bugs.
 
-## Part A: Inspection of each sample 
+### Part A: Inspection of each sample 
 
 For each bug, inspect the bug and the developer written trigger test. Relevant instructions are included in Labs 4 and 5. 
 
-## Part B: Prefix Generation
+### Part B: Prefix Generation
 
 Experiments involving randomness should be repeated and averaged to account for the variability in outcomes caused by the randomness itself. Run each experiment for 3 trials with a search budget of 2 minutes each.
 
 For each bug, in how many trials was the buggy branch executed? Was it executed with a bug-triggering input?
 
-### Success Analysis
+**Success Analysis**
 Highlight the bugs for which we found success. Of the ones that did cover the bug, why? Was it a small search space?
 
-### Error Analysis
+**Error Analysis**
 Of the ones that did not cover the bug, why not? What would it have taken to make it cover it? Was it in the test cluster? Large search space?
 
-## Part C: Assertion Generation
+### Part C: Assertion Generation
 Generate the 3 assertions using EAS2 approach? But run the real tool:
 https://github.com/Lhy-apple/editas2
 
-## Part D: Report
+### Part D: Report
 Compile all of your results into a [latex document](https://www.overleaf.com/read/skgqsjtdprhz#2b546f) with your group. 
 
 
