@@ -69,11 +69,11 @@ In this project, you will....
 3. Improve upon the outputs on your target project
 
 ## Important Dates:
-1. Have a group by Mar 17th
-2. Run baselines on each bug and report Mar 31st
-3. Proposal for improvement April 7th
-4. Check in April 21st
-5. Due April 28/30th
+1. Groups formed by Mar 17th at midnight
+2. Part1 due Mar 31st
+3. Part2 April 7th
+4. Check in during lab April 21st
+5. Final Report due April 30th
 
 # Part 1: Due March 31st
 
@@ -83,7 +83,7 @@ Each group will be assigned a project from Defects4j and range of bugs.
 
 ### Part A: Inspection of each sample 
 
-For each bug, inspect the bug and the developer written trigger test. Relevant instructions are included in Labs 4 and 5. 
+For each bug, inspect the bug and the developer written trigger test. Relevant instructions are included in Labs 4 and 5. You will need to checkout your bug using `defects4j checkout` and open it in an IDE of your choice. The [Defects4j dissection](https://program-repair.org/defects4j-dissection/#!/) site will be useful for this project. 
 
 ### Part B: Prefix Generation
 
