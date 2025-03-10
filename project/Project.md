@@ -66,7 +66,10 @@ In this project, you will....
 
 1. Run the testing tool and EvoSuite
 2. Observe its outputs on the Defects4J benchmark and analyze strength and weaknesses
-3. Improve upon the outputs on your target project
+3. Run the assertion generator EditAs2
+4. Improve upon the outputs on your target project
+
+After completing steps 1-3, you will reflect on the effectiveness of these tools in real-world bug detection and consider how to optimize test generation processes for better results. Your findings will help in understanding the limitations and potential of automated bug-finding tools, setting the stage for further improvements in automated software testing.
 
 ## Important Dates:
 1. Groups formed by Mar 17th at midnight
@@ -79,7 +82,7 @@ In this project, you will....
 
 ### Bug Assignments:
 
-Each group will be assigned a project from Defects4j and range of bugs.
+Each group will be assigned a project from Defects4j and range of bugs. 
 
 ### Part A: Inspection of each sample 
 
@@ -100,6 +103,12 @@ Of the ones that did not cover the bug, why not? What would it have taken to mak
 ### Part C: Assertion Generation
 Generate the 3 assertions using EAS2 approach? But run the real tool:
 https://github.com/Lhy-apple/editas2
+
+**Success Analysis**
+Highlight the bugs for which we found success. Of the assertions that did trigger the bug, why? Was the retrieved assertion identical? Was there a small edit distance?
+
+**Error Analysis**
+Of the ones that did not cover the bug, why not? Was the edit distance very large?
 
 ### Part D: Report
 Compile all of your results into a [latex document](https://www.overleaf.com/read/skgqsjtdprhz#2b546f) with your group. 
