@@ -48,7 +48,7 @@ You can download the materials for this assignment here:
 {{page.type}}: {{page.title}}
 =============================================================
 
-Automated testing aims to generate tests which find bugs, prevent regressions and provide documentation. In this project, we will target bug finding as a use case for test generation.
+Automated testing aims to generate tests which find bugs, prevent regressions and provide documentation. In this project, we will target bug finding as a use case for test generation. In other words, our goal will be to generate tests which find bugs. 
 
 In general there are two types of bugs:
 1. safety property violations
@@ -56,13 +56,13 @@ In general there are two types of bugs:
 
 Tests consist of a prefix and an assertion. In order to find a bug, the prefix must set up state and exercise the buggy part of the code. Furthermore, the assertion must assert the correct behavior which the bug violates. 
 
-In this project you will run state of the art automated testing tools to attempt to find bugs in a benchmark. You will record the current state of the art as a baseline and attempt to approve upon it. 
+In this project you will run state of the art automated testing tools to attempt to find bugs in a benchmark. You will record the current state of the art as a baseline and attempt to approve upon it. Test generation is an active and fruitful area of computer science research. This is your opportunity to contribute to it! 
 
-Each group will be assigned a project from the Defects4J benchmark.
+Each group will be assigned a project from the Defects4J benchmark. Your goal will be to study the current state of test generation tools on finding that bug. You will closely analyze each bug and generated tests. 
 
 ## Objectives:
 
-In this project, you will....
+In this project, you will:
 
 1. Run the testing tool and EvoSuite
 2. Observe its outputs on the Defects4J benchmark and analyze strength and weaknesses
