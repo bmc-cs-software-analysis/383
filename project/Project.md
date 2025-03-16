@@ -97,7 +97,7 @@ For each bug, run EvoSuite with a search budget of 2 minutes to generate regress
 Once the tests are generated, untar the archive file and inspect the generated tests. In particular, look at the tests which execute the buggy method. 
 
 
-Experiments involving randomness should be repeated and averaged to account for the variability in outcomes caused by the randomness itself. Run each experiment for 3 trials with a search budget of 2 minutes each with a different random seed. To do this, you will need to set the `-b` and `-s` flags in (gen_tests.pl)[http://defects4j.org/html_doc/gen_tests.html]
+Experiments involving randomness should be repeated and averaged to account for the variability in outcomes caused by the randomness itself. Run each experiment for 3 trials with a search budget of 2 minutes each with a different random seed. To do this, you will need to set the `-b` and `-s` flags in [gen\_tests.pl](http://defects4j.org/html_doc/gen_tests.html)
 
 For each bug, in how many trials was the buggy branch executed? Was it executed with a bug-triggering input? Record this in your report.
 
