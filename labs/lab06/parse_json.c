@@ -18,7 +18,7 @@ typedef struct {
 int well_formed(const char *input);
 int has_a_list(const char *input);
 JsonObject parse_json(const char *input);
-JsonObject parse_list(const char *input);
+JsonObject* parse_list(const char *input);
 
 int main() {
     char input[MAX_SIZE];
@@ -43,9 +43,9 @@ int main() {
     return 0;
 }
 
-JsonObject parse_list(const char *input) {
+JsonObject* parse_list(const char *input) {
     abort(); 
-    return null;
+    return NULL;
 }
 
 int well_formed(const char *input) {
@@ -73,7 +73,7 @@ JsonObject parse_json(const char *input) {
 
     // Check for unsupported lists
     if (has_a_list(input)) {
-        obj = parse_list(input);
+        obj = *parse_list(input);
         return obj; // Return empty object with count -1 (indicating a bug)
     }
 
