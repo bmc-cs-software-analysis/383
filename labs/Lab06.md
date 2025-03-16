@@ -59,11 +59,54 @@ In this lab you will explore fuzzing C programs with AFL. You will run AFL on a 
 
 In this part of the assignment, you will use AFL++ to fuzz C programs. 
 
-Follow the instructions from the [Lecture 13 Class Activity](activity.html) to manually crash the given programs. Record the inputs that you manually derived.
+Follow the instructions from the [Lecture 13 Class Activity](../activity.html) to manually crash the given programs. Record the inputs that you manually derived.
 
-For this lab, download an additional file: 
+For this lab, download an additional file which reads a JSON formatted string as input: 
 
 `wget https://bmc-cs-software-analysis.github.io/383/labs/lab06/parse_json.c`
+
+If you're not familiar with JSON, it is a data format that uses key-value pairs to represent structured data. In data structures, you probably worked with CSV files. JSON is simliar, but instead of the key being a column header and a value being each row entry, the data is formatted as follows:
+
+```json
+{
+  "name": "John Doe",
+  "age": 30,
+  "email": "johndoe@example.com",
+  "isStudent": false,
+  "courses": ["Math", "Science", "History"],
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345"
+  }
+}
+```
+
+Values may also be lists (see the `courses` field). 
+
+Now, take a look at the `parse_json` file. The main method reads a JSON string from `stdin` and parses the values. 
+
+```c
+int main() {
+    char input[MAX_SIZE];
+
+    // Read input from stdin
+    printf("Enter a JSON string: ");
+    if (fgets(input, MAX_SIZE, stdin) != NULL) {
+        // Remove newline character at the end if present
+        input[strcspn(input, "\n")] = 0;
+
+        JsonObject obj = parse_json(input);
+        ... 
+    }
+}
+```
+
+Notice the crashing `abort()` on line 47 in `parse_list`. Inspect the `parse_json` and `has_a_list` methods. On which inputs would this program crash? 
+
+Manually crash this program in addition to the programs provided in the activity.
+
 
 
 ## Part 2: Crash the Programs with AFL
