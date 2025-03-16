@@ -88,11 +88,18 @@ Each group will be assigned a project from Defects4j and range of bugs.
 
 For each bug, inspect the bug and the developer written trigger test. Relevant instructions are included in Labs 4 and 5. You will need to checkout your bug using `defects4j checkout` and open it in an IDE of your choice. The [Defects4j dissection](https://program-repair.org/defects4j-dissection/#!/) site will be useful for this project. 
 
+Record if the developer written test asserts on a functional or safety property. This will be included in Table 1 of your report. 
+
 ### Part B: Prefix Generation
 
-Experiments involving randomness should be repeated and averaged to account for the variability in outcomes caused by the randomness itself. Run each experiment for 3 trials with a search budget of 2 minutes each.
+For each bug, run EvoSuite with a search budget of 2 minutes to generate regression tests. The scripts and jar files from Lab 5 will be useful here.
 
-For each bug, in how many trials was the buggy branch executed? Was it executed with a bug-triggering input?
+Once the tests are generated, untar the archive file and inspect the generated tests. In particular, look at the tests which execute the buggy method. 
+
+
+Experiments involving randomness should be repeated and averaged to account for the variability in outcomes caused by the randomness itself. Run each experiment for 3 trials with a search budget of 2 minutes each with a different random seed. To do this, you will need to set the `-b` and `-s` flags in (gen_tests.pl)[http://defects4j.org/html_doc/gen_tests.html]
+
+For each bug, in how many trials was the buggy branch executed? Was it executed with a bug-triggering input? Record this in your report.
 
 **Success Analysis**
 Highlight the bugs for which we found success. Of the ones that did cover the bug, why? Was it a small search space?
