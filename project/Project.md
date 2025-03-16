@@ -108,8 +108,10 @@ Highlight the bugs for which we found success. Of the ones that did cover the bu
 Of the ones that did not cover the bug, why not? What would it have taken to make it cover it? Was it in the test cluster? Large search space?
 
 ### Part C: Assertion Generation
-Generate the 3 assertions using EAS2 approach? But run the real tool:
-https://github.com/Lhy-apple/editas2
+
+For some bugs, EvoSuite will generate a prefix that executes the bug. In those cases, the assertion it generates will certainly not trigger the bug as it is a *regression oracle*. This means it reflects the current (buggy) implementation. 
+
+To generate assertions, you will use the [EditAS2](https://arxiv.org/pdf/2309.10264) approach. This approach is a combination of the techniques you implemented in HW2. First, it uses an information retrieval approach based on Jaccard similarity of the prefix. It retrieves the assertion from the most similar prefix in the corpus. Then, it uses a neural model to perform an edit on that retrieved assertion. This approach requires access a GPU so you cannot run it directly. Instead, if you think your EvoSuite prefix executes the bug, ask the professor to generate the assertions for you. Perform an analysis on the assertions.
 
 **Success Analysis**
 Highlight the bugs for which we found success. Of the assertions that did trigger the bug, why? Was the retrieved assertion identical? Was there a small edit distance?
