@@ -83,7 +83,7 @@ AFL++ requires a seed program. For now, create a directory `seed` and with a fil
 
 Run AFL with: `/AFLplusplus/afl-fuzz  -i seeds/ -o out/ -- ./easy1`
 
-Monitor the output and record the time taken to find each crash. The crashing input will be located in `out/default/crashes`. Record this. Is it different than the one you derived manually? Record your results and save them. You 
+Monitor the output and record the time taken to find each crash. The crashing input will be located in `out/default/crashes`. Record this. Is it different than the one you derived manually? Record your results and save them. 
 
 Do this for each of the target programs you downloaded, including the JSON parser.
 
