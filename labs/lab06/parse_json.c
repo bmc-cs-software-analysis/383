@@ -44,22 +44,42 @@ int main() {
 }
 
 JsonObject* parse_list(const char *input) {
-    abort(); 
+    abort();
     return NULL;
 }
 
 int well_formed(const char *input) {
     // Basic validation: check if it starts with '{' and ends with '}'
     size_t len = strlen(input);
-    if (input[0] == '{' && input[len - 1] == '}') {
-        return 1;
+    if (input[0] != '{' || input[len - 1] != '}') {
+        return 0;
     }
-    return 0;
+
+    // Additional validation: ensure matching braces (count of '{' and '}')
+    int open_braces = 0;
+    for (size_t i = 0; i < len; ++i) {
+        if (input[i] == '{') {
+            open_braces++;
+        } else if (input[i] == '}') {
+            open_braces--;
+            // If braces are mismatched at any point, return false
+            if (open_braces < 0) {
+                return 0;
+            }
+        }
+    }
+
+    // If open braces count is not zero, the braces are not balanced
+    if (open_braces != 0) {
+        return 0;
+    }
+
+    return 1; // Input is well-formed
 }
 
 int has_a_list(const char *input) {
     // Check if the input contains a '[' character, which indicates a list (not supported)
-    return strchr(input, '[') != NULL;
+    return strchr(input, '[') != NULL && strchr(input, ']') != NULL;
 }
 
 JsonObject parse_json(const char *input) {
