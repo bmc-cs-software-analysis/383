@@ -111,7 +111,7 @@ Highlight the bugs for which we found success. Of the assertions that did trigge
 Of the ones that did not cover the bug, why not? Was the edit distance very large?
 
 ### Part D: Report
-Compile all of your results into a [latex document](https://www.overleaf.com/read/skgqsjtdprhz#2b546f) with your group. 
+Compile all of your results into a [latex document](https://www.overleaf.com/read/skgqsjtdprhz#2b546f) with your group. Make a copy of the linked document and modify it with your answers. Your report should include figures with each of your assigned bugs. 
 
 
 # Part 2: Due April 7th
