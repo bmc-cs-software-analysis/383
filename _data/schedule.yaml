@@ -208,12 +208,13 @@
   lectures:
     - 
       date: 2025-03-17
-      title: Lecture 13 <br> SAT and SMT 
+      title: Lecture 13 <br> Boolean Satisfiability 
       #slides: "slides/lecture14.pdf"
       recording: ~
       assignments: 
         -
             title: "Lab 6 - AFL"
+            url: "labs/Lab06.html"
         -
             title: "Project"
             url: "project/Project.html"
