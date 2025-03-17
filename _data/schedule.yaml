@@ -209,7 +209,7 @@
     - 
       date: 2025-03-17
       title: Lecture 13 <br> Boolean Satisfiability 
-      #slides: "slides/lecture14.pdf"
+      slides: "slides/lecture13.pdf"
       recording: ~
       assignments: 
         -
