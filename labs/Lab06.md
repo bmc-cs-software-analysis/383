@@ -116,7 +116,7 @@ In this part, you will run AFL to generate inputs which crash the programs you m
 ### Setup
 1. ssh into goldengate
 2. From goldengate, `ssh USERNAME@atria.cs.brynmawr.edu`
-3. `sudo docker run -ti -v FULL_PATH_TO_THIS_ACTIVITY:/src aflplusplus/aflplusplus`
+3. `docker run -ti -v FULL_PATH_TO_THIS_ACTIVITY:/src aflplusplus/aflplusplus`
 
 If you run `ls /src/` you should see the downloaded files.
 
