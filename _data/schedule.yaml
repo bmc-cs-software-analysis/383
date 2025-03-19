@@ -224,8 +224,8 @@
       #      title: "Chapter 9 - Priority Queues"
     - 
       date: 2025-03-19
-      title: Lecture 14 <br> Formal Verification I
-      #slides: "slides/lecture15.pdf"
+      title: Lecture 14 <br> SAT and SMT
+      slides: "slides/lecture14.pdf"
       recording: ~
       #assignments: 
       #readings:
