@@ -318,7 +318,7 @@
       recording: ~
     - 
       date: 2025-04-21
-      title: Lecture 23 <br> Recent Advances
+      title: Lecture 23 <br> No Class
       #slides: "slides/lecture24.pdf"
       readings:
         -
@@ -328,7 +328,7 @@
       assignments: 
         - 
           #deadline: <s>2023-12-14</s>
-          title: "Lab 11 - Project Check in 2"
+          title: "No Lab."
               #"<s>HW09 - Google Maps</s>"
               #_url: "labs/Lab00.html"
     - 
@@ -346,10 +346,10 @@
       #recording: ~
       assignments:
           - 
-            title: "Lab 12 - Applications (Extra Credit)"
+            title: "Lab 11 - Project Check In 2"
     - 
       date: 2025-04-30
-      title: Lecture 26 <br> Project Presentations
+      title: Lecture 26 <br> No Class
       #slides: "slides/lecture27.pdf"
       recording: ~
   name: "Part II"
