@@ -227,7 +227,10 @@
       title: Lecture 14 <br> SAT and SMT
       slides: "slides/lecture14.pdf"
       recording: ~
-      #assignments: 
+      assignments: 
+        -
+          title: "Activity"
+          url: "Activity2.html"
       #readings:
       #  -
       #    title: "Chapter 9 - Priority Queues"
