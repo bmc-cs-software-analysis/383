@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Binary Trees"
+title: "Formal Verification"
 type: Lab
 number: 07
 active_tab: lab
-release_date: 2024-02-29
+release_date: 2025-03-24
 
 ---
 
@@ -49,57 +49,89 @@ You can download the materials for this assignment here:
 
 {{page.type}} {{page.number}}: {{page.title}}
 =============================================================
-You will be submitting this lab to Gradescope. 
+
+This lab is optionally completed in partners. If you complete this lab with a partner, submit only once to gradescope. It will be due Sunday March 30th. 
 
 ## Objectives:
 
-The main goals for this lab are:
-1. Get practice with binary trees
-1. Get more practice using checkstyle, JUnit, and implementing an interface
+In this lab you will formally verify programs by writing specifications that are translated to SMT formulae using OpenJML. 
 
-## Exercise 1 - LinkedBinaryTree (Binary Search Tree) 
+### Setup:
+1. Connect to goldengate
+2. `wget https://github.com/OpenJML/OpenJML/releases/download/21-0.8/openjml-ubuntu-20.04-21-0.8.zip` and unzip it. 
+3. run `./openjml` to verify you installed the tool correctly. You should see:
+`Usage: openjml <options> <source files>
+Use option '-?' to list options`
 
-Download the `LabBinaryTree` interface from  
-`wget https://raw.githubusercontent.com/BMC-CS-151/BMC-CS-151.github.io/main/labs/lab07/LabBinaryTree.java`. 
+## Exercise 1 - Verifying MathUtils.square
 
-Implement a `LinkedBinaryTree` that implements `LabBinaryTree`.
-Start with the methods `size`, `isEmpty`, `insert`,
-and `toString`, which creates a string representation
-of the tree by traversing through the nodes
-of the binary tree in in-order traversal order. 
-`insert` allows you to add to the tree and `toString()` allows
-you to check the contents of your tree.   
-`size` returns the number of nodes in the tree. 
+The first program you will verify is a simple square method.
+Download it: `wget https://bmc-cs-software-analysis.github.io/383/labs/lab07/MathUtils.java`
 
-The tree should be a Binary Search Tree. It should maintain the BST properties we discussed in class:
-At each node with value k:  
-- Left subtree contains only nodes with value lesser than k   
-- Right subtree contains only nodes with value greater than k
-- Both subtrees are a binary search tree
+Let’s verify that the square method in MathUtils behaves correctly—that is, it returns a value equal to `x * x`. This condition is written as a postcondition in the file `MathUtils.java` 
 
-Hint: you may find it useful to use private helper methods that are called from the publicly defined method in the interface.
+Before running anything, take a moment to think:
 
-Note that the interface requires that all listed methods be 
-implemented, but for now you can just implement method stubs for 
-the remaining methods
-and come back to them later in the lab.
+- Is the postcondition always true?
+- Can you think of any input for which the postcondition might not hold?
 
-## Exercise 2 - Testing
-In a file called `TestLinkedBinaryTree.java`,
-write JUnit tests test your methods. 
-Remember to thorougly test each method. 
+In traditional testing, we might generate random inputs and use assertions to check whether the postcondition holds. In this lab, however, we’ll go a step further—we’ll **formally verify** that the postcondition holds for *all* possible inputs using OpenJML.
 
-## Exercise 3 - `contains` and `height`
-Proceed with implementing and testing `contains` and `height`.
-The height of a tree with no root should be -1.
-Then, write JUnit tests in `TestLinkedBinaryTree.java` to 
-make sure they work correctly.
+Run the following command from your terminal:
+
+```bash
+openjml -esc -prover z3 MathUtils.java
+```
+
+You should see 3 verification failures.
+
+The first error will state: The prover cannot establish an assertion in method square: int multiply overflow.
+
+This means that an integer overflow might occur when computing x * x. Since Java’s int type has limited range, multiplying large values can exceed that range and wrap around, violating the postcondition.
+
+In java, integer overflow occurs when an arithmetic operation tries to create a value that is outside the range that the int type can represent. In Java, the int type is a 32-bit signed integer. Its range is: -2,147,483,648 to 2,147,483,647. Consider the following program:
+
+```java
+int a = Integer.MAX_VALUE;
+int b = a + 1;
+System.out.println(b);  // Outputs: -2147483648 (Integer.MIN_VALUE)
+```
+
+Here, adding 1 to the maximum int wraps around to the minimum value — this is silent overflow. Java doesn't throw an error.
+
+So, there are indeed some inputs for which the postcondition is not true. 
+The values of x for which this method functions correctly are -46340 to 46340. This can be written as a precondition: `//@ requires -46340 <= x && x <= 46340;`
+
+Try adding this as an annotation to `MathUtils.java` and rerun the verifier. You should see no output, which means your assertion is proven for all inputs that satisfy the precondition.
 
 
-# Summary
+## Exercise 2 - Verifying SignUtils.sign
 
-In this lab we covered binary trees. You gained more experiece using
-checkstyle, unit testing, and implementing an interface.
+The next program you will verify is a simple sign method.
+Download it: `wget https://bmc-cs-software-analysis.github.io/383/labs/lab07/SignUtils.java`
 
-### Signing out
-You do not need to be signed out by a TA for this lab. You will be submitting your code on Gradescope as part of HW05.
+Verify that sign returns what we expect: If returns 1 if x is positive, -1 if x is negative, and 0 if x is 0. Write this as an `@ensures` JML postcondition and run openjml to verify it.
+
+```bash
+openjml -esc -prover z3 SignUtils.java
+```
+
+## Exercise 3 - Verifying BuyTicket.calculatePrice
+
+Lastly, you will verify the `calculatePrice` program from labs 1-3. 
+
+Downlaod a version of it for this lab: `wget https://bmc-cs-software-analysis.github.io/383/labs/lab07/BuyTicket.java`
+
+
+Write annotations and verify them by running `openjml`.
+
+### Submission Instructions:
+
+Please submit the following files:
+
+1. SignUtils.java with JML annotations
+2. BuyTicket.java with JML annotations
+3. Lab report which answers the following questions:
+    a. What steps would be needed to formally verify the bug in Chart 1? What challenges or complications might arise during this process?
+    b. Briefly compare the guarantees and trade-offs between testing and formal verification.
+
