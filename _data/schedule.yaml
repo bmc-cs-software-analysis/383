@@ -240,10 +240,10 @@
       readings: ~
       assignments: 
         - 
-          title: "Lab 7 - SMT"
-      #    url: "labs/Lab08.html"
+          title: "Lab 7 - Formal Verification"
+          url: "labs/Lab07.html"
         -
-          title: "HW 5 - Verification"
+          title: "HW 5 - Boolean Satisfiability"
           url: "hws/HW05.html"
     - 
       date: 2025-03-26
