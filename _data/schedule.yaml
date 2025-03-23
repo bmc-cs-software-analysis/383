@@ -227,10 +227,7 @@
       title: Lecture 14 <br> SAT and SMT
       slides: "slides/lecture14.pdf"
       recording: ~
-      assignments: 
-        -
-          title: "Activity"
-          url: "activity2.html"
+      assignments: ~
       #readings:
       #  -
       #    title: "Chapter 9 - Priority Queues"
@@ -254,6 +251,10 @@
           #slides: "slides/lecture18.pdf"
       recording: ~
       readings: ~
+      assignments:
+        -
+          title: "Activity"
+          url: "activity2.html"
     - 
       date: 2025-03-31
       title: Lecture 17 <br> Symbolic Execution I
