@@ -16,7 +16,7 @@ public class DPLL {
         return false; 
     }
 
-    public static List<List<String>> unitPropagation(List<List<String>> clauses, Map<String, Boolean> assignment) {
+    public static List<List<String>> unitPropogation(List<List<String>> clauses, Map<String, Boolean> assignment) {
         // TODO
         return clauses;
     }
