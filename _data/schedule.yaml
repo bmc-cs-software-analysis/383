@@ -234,7 +234,7 @@
     - 
       date: 2025-03-24
       title: Lecture 15 <br> Formal Verification 
-      #slides: "slides/lecture16.pdf"
+      slides: "slides/lecture15.pdf"
       recording: ~
       readings: ~
       assignments: 
@@ -243,7 +243,7 @@
           url: "labs/Lab07.html"
         -
           title: "HW 5 - Boolean Satisfiability"
-          url: "hws/HW05.html"
+          #url: "hws/HW05.html"
     - 
       date: 2025-03-26
       title: Lecture 16 <br> Formal Verification II
