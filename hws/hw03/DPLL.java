@@ -1,3 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Arrays;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.IOException;
+
 public class DPLL {
 
     public static boolean dpll(List<List<String>> clauses, Map<String, Boolean> assignment) {
