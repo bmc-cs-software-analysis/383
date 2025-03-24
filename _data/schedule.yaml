@@ -255,6 +255,7 @@
         -
           title: "HW 3 - Boolean Satisfiability"
           url: "hws/HW03.html"
+          deadline: "2025-04-07"
     - 
       date: 2025-03-31
       title: Lecture 17 <br> Symbolic Execution I
