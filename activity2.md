@@ -16,10 +16,15 @@ In lab on Monday you explored formal verification using openJML - a tool that tr
 
 In this activity, you'll explore another family of formal verification. In these techniques, the program is part of the proof. This provides stronger gaurantees. In the previous family, error could be introduced in parsing the annotations, generating the constraints, or writing strong verification conditions. By writing the program directly as part of the proof, it eliminates room for error.
 
-## Resources
+### Resources
 1. [why3](https://www.why3.org/doc/index.html)
 
-Complete this activity on atria, where `why3` is installed.
+### Setup
+Complete this activity on atria
+0. ssh to goldengate then to `atria.cs.brynmawr.edu`
+1. `opam install why3`
+2. `opam init`
+3. `eval $(opam env)`
 
 ## Part 0: Hello Proof
 
