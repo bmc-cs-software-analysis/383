@@ -1,6 +1,6 @@
 import com.microsoft.z3.*;
 
-public class HW5Part1 {
+public class HW3Part1 {
 
     public static void f1() {
         //Boolean Proposition 1:  ~~A
