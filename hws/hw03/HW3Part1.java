@@ -72,6 +72,9 @@ public class HW3Part1 {
         Solver solver = ctx.mkSolver();
 
         //declare integer variables 
+        ArithExpr x = (ArithExpr) ctx.mkIntConst("X");
+        ArithExpr y = (ArithExpr) ctx.mkIntConst("Y");
+
     }
 
     public static void prog2() {
