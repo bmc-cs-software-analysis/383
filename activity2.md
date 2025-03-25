@@ -17,35 +17,33 @@ In lab on Monday you explored formal verification using openJML - a tool that tr
 In this activity, you'll explore another family of formal verification. In these techniques, the program is part of the proof. This provides stronger gaurantees. In the previous family, error could be introduced in parsing the annotations, generating the constraints, or writing strong verification conditions. By writing the program directly as part of the proof, it eliminates room for error.
 
 ### Resources
-1. [why3](https://www.why3.org/doc/index.html)
+1. [Dafny Cheatsheet](https://docs.google.com/document/d/1kz5_yqzhrEyXII96eCF1YoHZhnb_6dzv-K3u79bMMis/edit?pref=2&pli=1&tab=t.0)
 
 ### Setup
-Complete this activity on atria
-0. ssh to goldengate then to `atria.cs.brynmawr.edu`
-1. `opam install why3`
-2. `opam init`
-3. `eval $(opam env)`
+To complete this activity, install the Dafny vscode extension.
 
-## Part 0: Hello Proof
+## Part 0: Math
+Download `math.dfy`  with:
+`wget https://bmc-cs-software-analysis.github.io/383/activities/math.dfy`
 
-```
-theory HelloProof
+First, inspect the pre and post conditions for both methods. 
 
-  goal G1: true
+Try to change the implementation of `square` so it does not match the specification. The Dafny should report an error in the IDE:
+`error: this postcondition may not hold`
 
-  goal G2: (true -> false) /\ (true \/ false)
+Next, try to modify the pre-and post conditions on `Divide` and see what Dafny reports.
 
-  use int.Int
+## Part 1: Conditionals
 
-  goal G3: forall x:int. x * x >= 0
+Implement a method `method Abs(x: int)` that returns the absolute value of x and uses a conditional statement in its implementation.
 
-end
-```
+Add a postcondition to ensure the result is nonnegative and equal to either x or -x.
 
-## Part 1: Einsteins's Problem
-https://www.why3.org/doc/whyml.html
 
-## Part 2: Sum and Maximum
+## Part 2: Loops
 
-## Part 3: Searching a Linked List
+Implement a method `SumUpTo(n: nat)` that returns the sum of all integers from 1 to n.
+Use a while loop.
+Include appropriate loop invariants and a postcondition that ensures the result is equal to `n*(n+1)/2`.
+
 

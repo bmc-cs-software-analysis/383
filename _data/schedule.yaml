@@ -250,7 +250,7 @@
       readings: ~
       assignments:
         -
-          title: "Why3 Activity"
+          title: "Formal Verification Activity"
           url: "activity2.html"
         -
           title: "HW 3 - Boolean Satisfiability"
