@@ -247,7 +247,10 @@
       title: Lecture 16 <br> Formal Verification II
           #slides: "slides/lecture18.pdf"
       recording: ~
-      readings: ~
+      readings:
+        -
+          title: "The Software Crisis"
+          url: "https://www.youtube.com/watch?v=SQAoXRW-qZo&list=PLre5AT9JnKShFK9l9HYzkZugkJSsXioFs&index=4"
       assignments:
         -
           title: "Formal Verification Activity"
