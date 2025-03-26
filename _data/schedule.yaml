@@ -245,7 +245,7 @@
     - 
       date: 2025-03-26
       title: Lecture 16 <br> Formal Verification II
-          #slides: "slides/lecture18.pdf"
+      slides: "slides/lecture16.pdf"
       recording: ~
       readings:
         -
