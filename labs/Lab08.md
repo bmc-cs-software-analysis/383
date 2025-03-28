@@ -27,32 +27,42 @@ To complete this lab, install the Dafny vscode extension.
 ### Problem 1: Condition Strength
 Indicate the weakest condition in each set. Note: write "None" if the conditions are unrelated by implication.
 1.  
+    ```
     { -1 ≤ x ≤ 1 }
 
     { 0 ≤ x ≤ 1 }
 
     { x = 0 }
+    ```
 
 
 2. 
+    ```
     { x > 0 ∧ y ≥ 0 }
 
     { x > 0 ∨ y > 0 }
+    ```
 
 3. 
+    ```
     { |x| > w }
 
     { x > w }
+    ```
 4.
 
+    ```
     { |x| > |w| }
 
     { x > w }
+    ```
 5.
 
+    ```
     { x is int }
 
     { x is real }
+    ```
 
 
 ### Problem 2: Hoare Triples
