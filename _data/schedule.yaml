@@ -286,10 +286,7 @@
       title: Lecture 19 <br> Symbolic Execution I
       #slides: "slides/lecture20.pdf"
       #recording: ~
-      readings:
-        -
-          title: "Program Abstractions"
-          url: "https://elizabethdinella.github.io/blog-posts/programabstractions/"
+      readings: ~
       assignments: 
         -
             title: "Lab 9 - Symbolic Execution"
@@ -308,7 +305,10 @@
       date: 2025-04-14
       title: Lecture 21 <br> Static Analysis I
       #slides: "slides/lecture22.pdf"
-      recording: ~
+      readings: 
+        -
+          title: "Program Abstractions"
+          url: "https://elizabethdinella.github.io/blog-posts/programabstractions/"
       #readings:
       #  -
       #    title: "Chapter 11.2 - 11.6"
