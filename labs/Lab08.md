@@ -180,7 +180,7 @@ y = x;
 { y ≥ z }
 ```
 
-3.
+3. 
 ```
 { y > 0 }
 if (x == y)
@@ -196,7 +196,9 @@ else
 
 ### Problem 7: Loops
 1.  State a suitable loop invariant
-```{ x ≥ 0 }
+
+```
+{ x ≥ 0 }
 int i = x;
 int p = 0;
 while (i != 0) {
