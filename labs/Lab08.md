@@ -4,6 +4,7 @@ title: Formal Verification
 type: Lab
 number: 08
 release_date: 2025-03-31
+due_date: 2025-04-06 23:59:00EDT
 ---
 
 {{page.type}} {{page.number}}: {{page.title}}

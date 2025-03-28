@@ -241,6 +241,7 @@
         - 
           title: "Lab 7 - Formal Verification"
           url: "labs/Lab07.html"
+          deadline: 2025-03-30
         
     - 
       date: 2025-03-26
@@ -262,9 +263,9 @@
       #slides: "slides/lecture18.pdf"
       assignments: 
         - 
-          #deadline: 2023-12-05
           title: "Lab 8 - Dafny"
           url: "labs/Lab08.html"
+          deadline: 2025-04-06
       #readings:
       #  -
       #    title: "Chapter 10 - Maps, Hash Tables, and Skip Lists"
