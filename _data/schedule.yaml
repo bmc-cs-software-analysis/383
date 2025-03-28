@@ -261,12 +261,12 @@
           deadline: "2025-04-07"
     - 
       date: 2025-03-31
-      title: Lecture 17 <br> Symbolic Execution I
+      title: Lecture 17 <br> Deductive Reasoning 
       #slides: "slides/lecture18.pdf"
       assignments: 
         - 
           #deadline: 2023-12-05
-          title: "Lab 8 - Symbolic Execution"
+          title: "Lab 8 - Dafny"
           #url: "labs/Lab09.html"
       #readings:
       #  -
@@ -274,7 +274,7 @@
       recording: ~
     - 
       date: 2025-04-02
-      title: Lecture 18 <br> Symbolic Execution II
+      title: Lecture 18 <br> Project Check In
       #slides: "slides/lecture20.pdf"
       #readings:
       #  -
@@ -283,7 +283,7 @@
       recording: ~
     - 
       date: 2025-04-07
-      title: Lecture 19 <br> Static Analysis I
+      title: Lecture 19 <br> Symbolic Execution I
       #slides: "slides/lecture20.pdf"
       #recording: ~
       readings:
@@ -292,11 +292,11 @@
           url: "https://elizabethdinella.github.io/blog-posts/programabstractions/"
       assignments: 
         -
-            title: "Lab 9 - Project Check in"
+            title: "Lab 9 - Symbolic Execution"
             #url: "labs/Lab09.html"
     - 
       date: 2025-04-09
-      title: Lecture 20 <br> Static Analysis II 
+      title: Lecture 20 <br> Symbolic Execution II 
       #slides: "slides/lecture21.pdf"
       #recording: ~
       #readings:
@@ -306,7 +306,7 @@
       #    title: "Chapter 11.2 - 11.3 Balanced Trees, AVL Trees"
     - 
       date: 2025-04-14
-      title: Lecture 21 <br> Applications
+      title: Lecture 21 <br> Static Analysis I
       #slides: "slides/lecture22.pdf"
       recording: ~
       #readings:
@@ -318,7 +318,7 @@
           #url: "labs/Lab10.html"
     - 
       date: 2025-04-16
-      title: Lecture 22 <br> Applications
+      title: Lecture 22 <br> Static Analysis II
       #slides: "slides/lecture23.pdf"
       #readings: 
       #  -
