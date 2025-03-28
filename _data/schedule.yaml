@@ -253,9 +253,6 @@
           url: "https://www.youtube.com/watch?v=SQAoXRW-qZo&list=PLre5AT9JnKShFK9l9HYzkZugkJSsXioFs&index=4"
       assignments:
         -
-          title: "Formal Verification Activity"
-          url: "activity2.html"
-        -
           title: "HW 3 - Boolean Satisfiability"
           url: "hws/HW03.html"
           deadline: "2025-04-07"
@@ -267,7 +264,7 @@
         - 
           #deadline: 2023-12-05
           title: "Lab 8 - Dafny"
-          #url: "labs/Lab09.html"
+          url: "labs/Lab08.html"
       #readings:
       #  -
       #    title: "Chapter 10 - Maps, Hash Tables, and Skip Lists"
