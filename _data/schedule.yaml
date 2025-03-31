@@ -260,7 +260,7 @@
     - 
       date: 2025-03-31
       title: Lecture 17 <br> Deductive Reasoning 
-      #slides: "slides/lecture18.pdf"
+      slides: "slides/lecture17.pdf"
       assignments: 
         - 
           title: "Lab 8 - Dafny"
