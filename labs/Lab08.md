@@ -91,7 +91,7 @@ y = z - x;
 Find the strongest postcondition for each code sequence, inserting the appropriate condition in each blank.
 
 ```
-{ x > z }
+{ y > z }
 y = y - z;
 { _______________________________ }
 y = y + 2;
