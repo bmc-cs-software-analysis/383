@@ -1,2 +1,2 @@
 SATISFIABLE
-Assignment: {a=true, b=false, c=false}
+Assignment: {a=true, b=true, c=false}
