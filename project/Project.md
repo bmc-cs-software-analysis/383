@@ -73,12 +73,11 @@ After completing steps 1-3, you will reflect on the effectiveness of these tools
 
 ## Important Dates:
 1. Groups formed by Mar 17th at midnight
-2. Part1 due Mar 31st
-3. Part2 April 7th
-4. Check in during lab April 21st
-5. Final Report due April 30th
+2. Part1 due Mar 31st - **Resubmission due April 13th at Midnight**
+3. Part2 April 21st
+5. Final Report due April 30th *tentative - may be extended*
 
-# Part 1: Due March 31st
+# Part 1: Due March 31st - Resubmission due April 13th 
 
 ### Bug Assignments:
 
@@ -123,7 +122,7 @@ Of the ones that did not cover the bug, why not? Was the edit distance very larg
 Compile all of your results into a [latex document](https://www.overleaf.com/read/skgqsjtdprhz#2b546f) with your group. Make a copy of the linked document and modify it with your answers. Your report should include figures with each of your assigned bugs. 
 
 
-# Part 2: Due April 7th
+# Part 2: Due April 21st
 
 In this part, you will use your report to propose an improvement to either EvoSuite or the Assertion Generation. Your proposal should directly make use of your error analysis. More instructions coming!
 
