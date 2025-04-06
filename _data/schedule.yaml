@@ -292,7 +292,7 @@
         -
             title: "Lab 9 - Symbolic Execution"
             url: "labs/Lab09.html"
-            deadline: 04-13-2025
+            deadline: "2025-04-13"
     - 
       date: 2025-04-09
       title: Lecture 20 <br> Concolic Execution
