@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Hashmaps"
+title: "Symbolic Execution"
 type: Lab
 number: 09
 active_tab: lab
-release_date: 2024-04-08
+release_date: 2025-04-07
 
 ---
 
@@ -45,101 +45,39 @@ You can download the materials for this assignment here:
 
 
 
-
-
 {{page.type}} {{page.number}}: {{page.title}}
 =============================================================
+This lab is optionally completed in partners. If you complete this lab with a partner, submit only once to gradescope. It will be due Sunday April 13th. 
+
 ## Objectives:
 
-The main goals for this lab are:
-1. Getting practice with HashMaps and probing
+In this lab you will run a symbolic executor on Java programs and observe its outputs. 
+
+### Setup
+1. Skip this step if you are running on goldengate.
+    `git clone git@github.com:yannicnoller/jpf-core.git` 
+    `git clone git@github.com:SymbolicPathFinder/jpf-symbc.git`
+2. Create a propteries file with paths to the cloned repos:
+    `mkdir ~/.jpf`
+    `vim ~/.jpf/site.properties` and add the lines:
+    `jpf-core=PATH TO CORE REPO`
+    `jpf-symbc=PATH TO SYMBC REPO`
+    `extensions+=,jpf-symbc`
+
+## Running JavaPathFinder
+
+Download the target files
 
 
-### Paired Programming rules
-This lab is a **paired programming assignment.** What exactly does that mean? 
-You will be working in pairs on the CS lab computers. Each pair will be working on one computer. One person will be the **driver** and the other person
- will be the **navigator**. Here is the rule: the **driver** controlls the lab computer, but the **driver** can only type what the **navigator** tells 
-them to type. For this to work well, each pair should be constantly talking 
-among themselves. After each problem, you will switch roles, the navigator will become the driver and the driver will become the navigator.
+For each program, answer the following questions:
+1. How many paths were there?
+2. How long did it take? Exact time not needed. Just state if it was minutes, seconds, hours, etc
+3. How large is the input space? Give concrete numbers. In the worst case, how many testing runs would have to be executed to find this bug? 
 
-### Files
-All files to download are available at:
-`{{ site.url }}{{ site.baseurl }}/labs/lab09/`. Just append
-the file name to that url.
+### Submission
+Submit your report which answers the questions for each target program to gradescope. 
 
-1. Download `Entry.java`, `Map.java`, 
-`AbstractMap.java`, `AbstractHashMap.java`
-and `ProbeHashMap.java`.
-This is the book’s implementation of a
-linear-probing hash table.
+In addition, answer the following question:
+1. Discuss the pros and cons of symbolic execution vs testing. Use at least one example from the target files.
+2. Discuss the pros and cons of symbolic execution vs formal verification. Use at least one example from the target files.
 
-2. Study `ProbeHashMap.java` and make sure you understand the implementation details.
-
-3. Download `dictionary.txt` and `search.txt`.
-
-## Exercise 1 - Inserting `dictionary.txt`:
-You will write a program that first creates a
-`ProbeHashMap`, and then insert words in 
-`dictionary.txt` one by one as keys into that hash
-table. Values are the same words. 
-There are 24,520 words in the file. 
-Your initial hash table
-capacity should be chosen as a reasonably large prime number.
-
-As you insert each word, compute the average number of probes and maximum number of
-probes. Number of probes is the number of times 
-an open-addressing hashtable needs to try
-before finding the correct array location to either insert or find 
-a key-value pair. With no
-collision, the average and max number of probes per key should be 1.
-Print these values after all insertions are completed. 
-Note that, to be able to compute these values, you will need to
-update `ProbeHashMap` class. The lines of the output should print the hash table statistics in
-the following order:
-
-```
-average number of probes during insertions:
-max number of probes during insertions:
-load factor after insertions:
-```
-
-The load factor is the number of elements in the hash table divided by the capacity of the
-hash table. It indicates how full the hash table is.
-
-## Exercise 2 - `search.txt`
-Now, read each word from search.txt (one word per line) and search for each one in the
-hashtable. If the word is found, just print it back out. If the word you are looking for is not
-in the dictionary, assume that it is misspelled. To suggest corrections, for each misspelled
-word, list any words in the dictionary that are obtainable by any of the following rules:
-
-- Change one letter: For example, if the misspelled word is “kest”, try all possibilities
-of changing one character at a time, and look the modified word up in the dictionary.
-The possibilities will be “aest”, “best”,...,”zest”, “kast”,...,”kzst”, etc. Assume that the
-words in the dictionary file are given in lower case. So, before looking up a word in the
-dictionary, convert the word to lower case.
-- Exchange adjacent letters: For example, if the misspelled word is “ebst”, try “best”,
-esbt” and “ebts”.
-- Remove one letter: For example, if the misspelled word is “tbird”, try all possibilities of
-removing one letter at a time, and look the modified word up in the dictionary, which
-are: “bird”, “tird”, “tbrd”, and “tbir”.
-
-Note that, you have to try all possibilities, but only the ones that are actually found in the
-dictionary are possible corrections to be suggested.
-
-**Output Format**: For each misspelled word, generate a single output line as follows. First
-print the word itself, then colon(:), and finally the list of possible corrections separated by
-commas. For example, if the misspelled word is “kest”, the output may be:
-kest: best, fest, jest, kent, kept, lest, nest, pest, rest, test, vest, west,
-zest, est
-
-As you search each word/possibly corrected word, compute the average number of probes,
-and maximum number of probes. Print these values once after all searches are completed.
-
-# Summary
-
-In this lab we covered hashmaps and got hands on experience with probing.
-
-### Signing out
-Before leaving, make sure your TA/instructor have signed you out of the lab. If you finish the lab early, you are free to go.
-If you do not finish the lab in time, you will need to go to office hours so
-that a TA can check your work. This lab must be completed by the HW7 Deadline 
