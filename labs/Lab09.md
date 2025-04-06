@@ -131,4 +131,4 @@ Submit your report which answers the questions for each target program to grades
 In addition, answer the following question:
 1. Discuss the pros and cons of symbolic execution vs testing. Use at least one example from the target files.
 2. Discuss the pros and cons of symbolic execution vs formal verification. Use at least one example from the target files.
-3. Some targets in this lab did not have assertions, but the tool could still find buygs. Why? What does java path finder use for postconditions?
+3. Some targets in this lab did not have assertions, but the tool could still find bugs. Why? What does java path finder use for postconditions?
