@@ -132,3 +132,5 @@ In addition, answer the following question:
 1. Discuss the pros and cons of symbolic execution vs testing. Use at least one example from the target files.
 2. Discuss the pros and cons of symbolic execution vs formal verification. Use at least one example from the target files.
 3. Some targets in this lab did not have assertions, but the tool could still find bugs. Why? What does java path finder use for postconditions?
+4. Compare the outputs on Target 5 and Target 6. Was there a difference? why/why not? Your answer should include a discussion involving `input.txt`
+
