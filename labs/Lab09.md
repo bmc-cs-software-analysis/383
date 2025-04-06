@@ -120,9 +120,10 @@ java.lang.ArithmeticException: div by 0
 ```
 
 For each program, answer the following questions:
-1. How many paths were there? 
-2. How long did it take? Exact time not needed. Just state if it was minutes, seconds, hours, etc
-3. How large is the input space? Give concrete numbers. In the worst case, how many testing runs would have to be executed to find this bug? 
+1. How many paths were there? Were all satisfiable? 
+2. Did the SymExc tool find the bug? If not why? 
+3. How long did it take? Exact time should be listed in the tool's output. 
+4. How large is the input space? Give concrete numbers. In the worst case, how many testing runs would have to be executed to find this bug? 
 
 ### Submission
 Submit your report which answers the questions for each target program to gradescope. 
@@ -130,4 +131,4 @@ Submit your report which answers the questions for each target program to grades
 In addition, answer the following question:
 1. Discuss the pros and cons of symbolic execution vs testing. Use at least one example from the target files.
 2. Discuss the pros and cons of symbolic execution vs formal verification. Use at least one example from the target files.
-3. We did not need to write assertions for some targets in this lab. Why not? What does java path finder use for postconditions?
+3. Some targets in this lab did not have assertions, but the tool could still find buygs. Why? What does java path finder use for postconditions?
