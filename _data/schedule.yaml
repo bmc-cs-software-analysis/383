@@ -305,35 +305,28 @@
       #    title: "Chapter 11.2 - 11.3 Balanced Trees, AVL Trees"
     - 
       date: 2025-04-14
-      title: Lecture 21 <br> Static Analysis I
+      title: Lecture 21 <br> Project Check in II
       #slides: "slides/lecture22.pdf"
+      readings: ~
+      assignments: 
+        -
+          title: "Lab - Project Check In 2"
+          #url: "labs/Lab10.html"
+    - 
+      date: 2025-04-16
+      title: Lecture 22 <br> Static Analysis
+      #slides: "slides/lecture23.pdf"
       readings: 
         -
           title: "Program Abstractions"
           url: "https://elizabethdinella.github.io/blog-posts/programabstractions/"
-      #readings:
-      #  -
-      #    title: "Chapter 11.2 - 11.6"
-      assignments: 
-        -
-          title: "Lab10 - Static Analysis"
-          #url: "labs/Lab10.html"
-    - 
-      date: 2025-04-16
-      title: Lecture 22 <br> Static Analysis II
-      #slides: "slides/lecture23.pdf"
-      #readings: 
-      #  -
-      #    title: "Chapter 11.2 - 11.6"
       recording: ~
     - 
       date: 2025-04-21
       title: Lecture 23 <br> No Class
       #slides: "slides/lecture24.pdf"
-      readings:
-        -
-          title: "Prompts are Programs"
-          url: "https://blog.sigplan.org/2024/10/22/prompts-are-programs/"
+      readings: ~
+        
       recording: ~
       assignments: 
         - 
@@ -343,20 +336,24 @@
               #_url: "labs/Lab00.html"
     - 
       date: 2025-04-23
-      title: Lecture 24 <br> Recent Advances
+      title: Lecture 24 <br> Static Analysis II
       #slides: "slides/lecture25.pdf"
       #readings:
+      
       #  -
       #    title: "Chapter 14.1 - Chapter 14.3"
     -
       date: 2025-04-28
-      title: Lecture 25 <br> Recent Advances II
+      title: Lecture 25 <br> Recent Advances 
       #slides: "slides/lecture26.pdf"
-      #readings: ~
+      readings: 
+        -
+          title: "Prompts are Programs"
+          url: "https://blog.sigplan.org/2024/10/22/prompts-are-programs/"
       #recording: ~
       assignments:
           - 
-            title: "Lab 11 - Project Check In 2"
+            title: "Lab 11 - Project Check In 3"
     - 
       date: 2025-04-30
       title: Lecture 26 <br> No Class
