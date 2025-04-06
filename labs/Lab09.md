@@ -54,19 +54,34 @@ This lab is optionally completed in partners. If you complete this lab with a pa
 In this lab you will run a symbolic executor on Java programs and observe its outputs. 
 
 ### Setup
-1. Skip this step if you are running on goldengate.
-    `git clone git@github.com:yannicnoller/jpf-core.git` 
-    `git clone git@github.com:SymbolicPathFinder/jpf-symbc.git`
-2. Create a propteries file with paths to the cloned repos:
+I recommend running on atria. Be sure to backup your lab report elsewhere.
+
+1. You will need java version 8 for this lab. Install sdkman using the instructions in Lab 5 Part 0. 
+    Once it is installed run:
+    `sdk install java 8.0.442-librca` and `sdk use java 8.0.442-librca`
+
+2. Download the following 2 zip files and unzip them:
+    `wget https://github.com/bmc-cs-software-analysis/383/blob/main/labs/lab09/jpf-core.zip` and
+    navigate to this link: `https://drive.google.com/file/d/1DCv9KtwMi8bKKjeyNFpDQDq5d-QRp3DT/view?usp=sharing`    
+
+3. Create a `.jpf` directory in your home directory and create a `site.properties` file:
     `mkdir ~/.jpf`
-    `vim ~/.jpf/site.properties` and add the lines:
-    `jpf-core=PATH TO CORE REPO`
-    `jpf-symbc=PATH TO SYMBC REPO`
-    `extensions+=,jpf-symbc`
+    `cd ~/.jpdf`
+    `vim site.properties` and add the following lines:
+
+    ```bash
+    jpf-core=PATH-TO-UNZIPPED-DIR/jpf-core
+    jpf-symbc=PATH-TO-UNZIPPED-DIR/jpf-symbc
+    extensions+=,jpf-symbc
+    ```
+
+
+    
 
 ## Running JavaPathFinder
 
 Download the target files
+Compile the target with `-g`
 
 
 For each program, answer the following questions:
