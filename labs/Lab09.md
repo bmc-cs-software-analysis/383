@@ -83,9 +83,44 @@ I recommend running on atria. Be sure to backup your lab report elsewhere.
 Download the target files
 Compile the target with `-g`
 
+`java -jar jpf-core/build/RunJPF.jar Target.jpf`
+
+You should see output with the following:
+```
+### PCs: total:4 sat:4 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 2
+x_1_SYMINT == CONST_0 &&
+x_1_SYMINT >= y_2_SYMINT
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArithmeticException: div by 0
+	at Target.test(Target.java:7)
+	at Target.main(Target.java:13)
+```
+
+This means there were 4 total path conditions that were all satisfiable.
+
+The shown path constraint
+```
+### PCs: total:4 sat:4 unsat:0
+
+string analysis: SPC # = 0
+NPC constraint # = 2
+x_1_SYMINT == CONST_0 &&
+x_1_SYMINT >= y_2_SYMINT
+
+====================================================== error 1
+gov.nasa.jpf.vm.NoUncaughtExceptionsProperty
+java.lang.ArithmeticException: div by 0
+	at Target.test(Target.java:7)
+	at Target.main(Target.java:13)
+```
 
 For each program, answer the following questions:
-1. How many paths were there?
+1. How many paths were there? 
 2. How long did it take? Exact time not needed. Just state if it was minutes, seconds, hours, etc
 3. How large is the input space? Give concrete numbers. In the worst case, how many testing runs would have to be executed to find this bug? 
 
@@ -95,4 +130,4 @@ Submit your report which answers the questions for each target program to grades
 In addition, answer the following question:
 1. Discuss the pros and cons of symbolic execution vs testing. Use at least one example from the target files.
 2. Discuss the pros and cons of symbolic execution vs formal verification. Use at least one example from the target files.
-
+3. We did not need to write assertions for some targets in this lab. Why not? What does java path finder use for postconditions?
