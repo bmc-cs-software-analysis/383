@@ -75,14 +75,16 @@ I recommend running on atria. Be sure to backup your lab report elsewhere.
     extensions+=,jpf-symbc
     ```
 
+4. Download the target files:
+    `wget https://github.com/bmc-cs-software-analysis/383/blob/main/labs/lab09/lab9-targets.zip` 
 
     
 
 ## Running JavaPathFinder
 
-Download the target files
-Compile the target with `-g`
+For each target file, compile the target with `-g`. 
 
+Then, run the jpf-core jar on the `.jpf` file:
 `java -jar jpf-core/build/RunJPF.jar Target.jpf`
 
 You should see output with the following:
