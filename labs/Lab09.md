@@ -61,7 +61,7 @@ I recommend running on atria. Be sure to backup your lab report elsewhere.
     `sdk install java 8.0.442-librca` and `sdk use java 8.0.442-librca`
 
 2. Download the following 2 zip files and unzip them:
-    `wget https://github.com/bmc-cs-software-analysis/383/blob/main/labs/lab09/jpf-core.zip` OR the gdrive link `https://drive.google.com/file/d/1fSUqjyV_mxzKqwjsiBjzYNa8FvBNkaOw/view?usp=sharing`
+    gdrive link `https://drive.google.com/file/d/1fSUqjyV_mxzKqwjsiBjzYNa8FvBNkaOw/view?usp=sharing`
 
     and
     navigate to this link: `https://drive.google.com/file/d/1DCv9KtwMi8bKKjeyNFpDQDq5d-QRp3DT/view?usp=sharing`    
@@ -78,9 +78,7 @@ I recommend running on atria. Be sure to backup your lab report elsewhere.
     ```
 
 4. Download the target files:
-    `wget https://github.com/bmc-cs-software-analysis/383/blob/main/labs/lab09/lab9-targets.zip` 
-
-    OR navigate to this gdrive link:
+    navigate to this gdrive link:
     `https://drive.google.com/file/d/1pCyDOGX2zUzlKjRrJVieF7Tm8hcgCtNe/view?usp=sharing`
 
     
