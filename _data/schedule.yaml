@@ -332,7 +332,7 @@
               #_url: "labs/Lab00.html"
     - 
       date: 2025-04-23
-      title: Lecture 24 <br> Static Analysis II
+      title: Lecture 24 <br> Static Analysis
       #slides: "slides/lecture25.pdf"
       readings:
         -
@@ -340,7 +340,7 @@
           url: "https://elizabethdinella.github.io/blog-posts/programabstractions/"
     -
       date: 2025-04-28
-      title: Lecture 25 <br> Recent Advances 
+      title: Lecture 25 <br> Static Analysis II
       #slides: "slides/lecture26.pdf"
       readings: 
         -
