@@ -298,11 +298,10 @@
       title: Lecture 20 <br> Concolic Execution
       #slides: "slides/lecture21.pdf"
       #recording: ~
-      #readings:
-      #  -
-      #    title: "Chapter 10.3 - Sorted Maps"
-      #  -
-      #    title: "Chapter 11.2 - 11.3 Balanced Trees, AVL Trees"
+      readings:
+        -
+          title: "On Recent AI Model Progress"
+          url: "https://zeropath.com/blog/on-recent-ai-model-progress"
     - 
       date: 2025-04-14
       title: Lecture 21 <br> Project Check in II
