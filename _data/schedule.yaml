@@ -304,7 +304,7 @@
           url: "https://zeropath.com/blog/on-recent-ai-model-progress"
     - 
       date: 2025-04-14
-      title: Lecture 21 <br> Project Check in II
+      title: Lecture 21 <br> No Class
       #slides: "slides/lecture22.pdf"
       readings: ~
       assignments: 
@@ -313,19 +313,16 @@
           #url: "labs/Lab10.html"
     - 
       date: 2025-04-16
-      title: Lecture 22 <br> Static Analysis
+      title: Lecture 22 <br> Project Check in II
       #slides: "slides/lecture23.pdf"
-      readings: 
-        -
-          title: "Program Abstractions"
-          url: "https://elizabethdinella.github.io/blog-posts/programabstractions/"
+      readings: ~
+      
       recording: ~
     - 
       date: 2025-04-21
       title: Lecture 23 <br> No Class
       #slides: "slides/lecture24.pdf"
       readings: ~
-        
       recording: ~
       assignments: 
         - 
@@ -337,10 +334,10 @@
       date: 2025-04-23
       title: Lecture 24 <br> Static Analysis II
       #slides: "slides/lecture25.pdf"
-      #readings:
-      
-      #  -
-      #    title: "Chapter 14.1 - Chapter 14.3"
+      readings:
+        -
+          title: "Program Abstractions"
+          url: "https://elizabethdinella.github.io/blog-posts/programabstractions/"
     -
       date: 2025-04-28
       title: Lecture 25 <br> Recent Advances 
