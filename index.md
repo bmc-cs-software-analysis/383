@@ -74,8 +74,7 @@ Course Readings
 Grading
 * Homeworks: 20%
 * Labs: 35%
-* Project I : 10%
-* Project II: 30% 
+* Project: 40%
 * Participation: 5%
 
 
