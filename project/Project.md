@@ -121,11 +121,15 @@ Of the ones that did not cover the bug, why not? Was the edit distance very larg
 ### Part D: Report
 Compile all of your results into a [latex document](https://www.overleaf.com/read/skgqsjtdprhz#2b546f) with your group. Make a copy of the linked document and modify it with your answers. Your report should include figures with each of your assigned bugs. 
 
-
 # Part 2: Due April 21st
 
-In this part, you will use your report to propose an improvement to either EvoSuite or the Assertion Generation. Your proposal should directly make use of your error analysis. More instructions coming!
+In this part, you will use your report to propose an improvement to either EvoSuite or the Assertion Generation. Your proposal should directly make use of your error analysis. 
 
-# Part 3: Due April 30th
+In this part, you will add a section to your report which details your suggested improvement. Your goal should be to propose a unifying improvement which has the largest effect on your studied benchmark. In your report, list which bugs would be affected by this improvement and which results would be unchanged. Work through your proposed modification by hand (do not implement it for this part!) and show why this would be a good improvement. Make direct references to specific bugs and content in your error analysis. 
+
+For this submission, please make all changes I suggested in the project part 2 check in.
+
+
+# Part 3: Due April 30th (tentative - may be extended)
 
 In this part you will implement your proposed improvement and discuss results. More instructions coming!
