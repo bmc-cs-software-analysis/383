@@ -56,7 +56,7 @@ The main goals for this lab are:
 
 ## Part 1: 
 For the Control Flow Graph below,
-fill in Reaching Definitions gen and kill sets, and in and out sets for each basic block. The in and
+fill in Reaching Definitions gen and kill sets, and in and out sets for each node. The in and
 out sets show the final solution of fixpoint iteration, not an intermediate value.
 
 ![](labs/lab10/p1.png)
