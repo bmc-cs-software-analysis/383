@@ -59,7 +59,7 @@ For the Control Flow Graph below,
 fill in Reaching Definitions gen and kill sets, and in and out sets for each node. The in and
 out sets show the final solution of fixpoint iteration, not an intermediate value.
 
-![p1](labs/lab10/p1.png)
+![p1](/383/labs/lab10/p1.png)
 
 ## Part 2: SpotBugs
 
