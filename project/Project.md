@@ -75,7 +75,7 @@ After completing steps 1-3, you will reflect on the effectiveness of these tools
 1. Groups formed by Mar 17th at midnight
 2. Part1 due Mar 31st - **Resubmission due April 13th at Midnight**
 3. Part2 April 21st
-5. Final Report due April 30th *tentative - may be extended*
+5. Final Report due May 9th
 
 # Part 1: Due March 31st - Resubmission due April 13th 
 
@@ -130,6 +130,27 @@ In this part, you will add a section to your report which details your suggested
 For this submission, please make all changes I suggested in the project part 2 check in.
 
 
-# Part 3: Due April 30th (tentative - may be extended)
+# Part 3: Due May 9
 
-In this part you will implement your proposed improvement and discuss results. More instructions coming!
+In this part you will implement your proposed improvement and discuss results. The final report is due May 9th at midnight, but I highly recommend submitting early for feedback. Consider May 4th as the last submission day for high quality feedback. You're free to ask for feedback all the way up until the deadline, but I cannot guarantee a full read of your report with high quality comments unless it is submitted to me by May 4th at midnight.
+
+After you implement and execute your improvement, perform the analysis in part 1 again. Only perform analysis on the component that you modified. If you targeted assertion generation, you do not need to re-run evosuite. If you targeted prefix generation, you do not need to re generate assertions. This part of the report should largely focus on the component which you are modifying. If your group is targeting prefix generation, you should still run 3 trials for each bug. 
+
+Please include an error analysis or success analysis for each bug. Answer the same questions as in part 1. 
+
+Your report must include a Table 3 which shows a comparison of your approach and original approach with a row for each bug. Include a results section which discusses your results in Table 3 both overall and for each bug. 
+
+Make sure the answer the following questions at a minimum:
+How effective was your improvement? Please also comment on the generality of your approach. Do you think it would be useful beyond the project benchmark you were given? Also include a cost-benefit discussion. Did your approach require additional memory or compute? If so, was it worth the benefits you saw? 
+
+In your final submission, clearly state who was responsible for each bug.
+
+### Making modifications to EvoSuite:
+
+
+1. clone evosuite (`https://github.com/EvoSuite/evosuite`)
+2. checkout the version you used for Part 1 (`git checkout dba720b`)
+3. Make your changes
+4. Create a new jar file using `mvn clean install -DskipTests`. 
+
+
