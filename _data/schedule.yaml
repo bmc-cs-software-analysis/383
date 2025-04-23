@@ -333,7 +333,7 @@
     - 
       date: 2025-04-23
       title: Lecture 24 <br> Static Analysis
-      #slides: "slides/lecture25.pdf"
+      slides: "slides/lecture24.pdf"
       readings:
         -
           title: "Program Abstractions"
