@@ -52,20 +52,53 @@ This lab is optionally completed in partners. If you complete this lab with a pa
 
 ## Objectives:
 The main goals for this lab are:
+1. Practice reachability analysis by hand
+2. Explore false positives and the reasons they arise
 
-
-## Part 1: 
+## Part 1: Reachability Analysis
 For the Control Flow Graph below,
 fill in Reaching Definitions gen and kill sets, and in and out sets for each node. The in and
 out sets show the final solution of fixpoint iteration, not an intermediate value.
 
 ![p1](/383/labs/lab10/p1.png)
 
-## Part 2: SpotBugs
+## Part 2: Numeric Analysis
 
-# Submission
-Your report should include answers to the following questions:
+Design an abstract domain for the example program we saw in class (Lecture 25). The abstract domain we explored led to a false positive at the assertion point (p7). Your abstract domain should be more precise and prevent a false positive.
 
-1. Provide a discussion regarding the "checkers". Are these safety or functional properties? Put this in context to the assertion generation lectures and assignments.
+```java
+if (x == 0) {       // p1
 
-2. How did you inject a FP?
+       x--;            // p2
+
+   } else if (x < 0) { // p3
+
+       x = x + (-5);     // p4
+
+
+   } else if (x > 0) { // p5
+
+       x = x * 0;  // p6
+
+   }
+
+   assert(x <= 0); //p7
+```
+
+
+## Part 3: Fill out your course evaluation
+
+These teaching evaluations are used for three purposes: 
+    1) they provide feedback that should be helpful to the course instructor in general, or when this course is taught again; 
+    2) they are reviewed by various faculty members in the evaluation of teaching when the College considers an instructor for reappointment, tenure, or promotion; 
+    3) they provide information that helps the College evaluate larger curricular initiatives and goals. Both the instructor and the College appreciate thoughtful, candid, comments whether positive or negative, and constructive suggestions for improvement.  
+
+Please spend 20 minutes responding to the questions on this form. Your answers will not be attributed to you. The instructor will see the results only after course grades have been submitted to the Registrar.
+
+
+## Signing out
+
+Submit the folowing to gradescope:
+1. Your annotated CFG for Part 1.
+2. Your annotated program (tracking abstract values of x) and your abstract domain for Part 2.
+3. A confirmation that you've completed your course evaluation
