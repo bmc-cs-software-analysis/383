@@ -341,7 +341,7 @@
     -
       date: 2025-04-28
       title: Lecture 25 <br> Static Analysis II
-      #slides: "slides/lecture26.pdf"
+      slides: "slides/lecture25.pdf"
       readings: 
         -
           title: "Prompts are Programs"
