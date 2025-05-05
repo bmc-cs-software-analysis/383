@@ -147,10 +147,10 @@ In your final submission, clearly state who was responsible for each bug.
 
 ### Making modifications to EvoSuite:
 
-
 1. clone evosuite (`https://github.com/EvoSuite/evosuite`)
 2. checkout the version you used for Part 1 (`git checkout dba720b`)
 3. Make your changes
 4. Create a new jar file using `mvn clean install -DskipTests`. 
+5. The jar will be in: `shaded/target/evosuite-shaded-1.1.0.jar` run with `java JAR shaded.org.evosuite.EvoSuite`
 
 
