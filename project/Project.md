@@ -153,4 +153,7 @@ In your final submission, clearly state who was responsible for each bug.
 4. Create a new jar file using `mvn clean install -DskipTests`. 
 5. The jar will be in: `shaded/target/evosuite-shaded-1.1.0.jar` run with `java JAR shaded.org.evosuite.EvoSuite`
 
+For groups interested in biasing the generation of constants, here is an example I made to bias int generation toward 1999:
+https://github.com/elizabethdinella/evosuite-debug/commit/280b75679316ec84cab4e945cdb79918bf1d994e
 
+(Your modification should not simply bias toward hard coded constants, this is just a simple example)
